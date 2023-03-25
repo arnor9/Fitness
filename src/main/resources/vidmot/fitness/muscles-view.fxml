@@ -2,12 +2,87 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.Muscles">
-   <children>
-      <Label layoutX="264.0" layoutY="163.0" text="Video" />
-      <Button layoutX="82.0" layoutY="284.0" mnemonicParsing="false" onAction="#fxback" text="tilbaka" />
-   </children>
-</AnchorPane>
+<ScrollPane prefHeight="758.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.Muscles">
+    <content>
+        <AnchorPane prefHeight="755.0" prefWidth="606.0">
+            <children>
+                <Label layoutX="35.0" layoutY="25.0" prefHeight="17.0" prefWidth="42.0" text="Biceps" />
+                <Button layoutX="516.0" layoutY="21.0" mnemonicParsing="false" onAction="#fxback" text="tilbaka" />
+                <ImageView fx:id="myImage" fitHeight="97.0" fitWidth="155.0" layoutX="35.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/sittedcurls.jpg" />
+                    </image>
+                </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="158.0" layoutX="189.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../myndir/Standingcurls.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="96.0" fitWidth="167.0" layoutX="358.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../myndir/preachercurls.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="35.0" layoutY="183.0" prefHeight="17.0" prefWidth="42.0" text="Back" />
+            <ImageView fx:id="myImage1" fitHeight="100.0" fitWidth="145.0" layoutX="35.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../myndir/Chinups.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="151.0" layoutX="189.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../myndir/Rows.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="35.0" layoutY="338.0" prefHeight="17.0" prefWidth="42.0" text="Chest" />
+            <ImageView fx:id="myImage2" fitHeight="111.0" fitWidth="167.0" layoutX="35.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../myndir/Bekkpressa.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="96.0" fitWidth="116.0" layoutX="228.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../myndir/inclinebekkur.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="96.0" fitWidth="167.0" layoutX="370.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../myndir/cablecross.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="35.0" layoutY="508.0" prefHeight="17.0" prefWidth="42.0" text="Legs" />
+            <ImageView fx:id="myImage3" fitHeight="97.0" fitWidth="155.0" layoutX="35.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../myndir/squata.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="158.0" layoutX="189.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../myndir/legextention.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="113.0" fitWidth="196.0" layoutX="358.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../myndir/pressa.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="sittedCurls" layoutX="67.0" layoutY="43.0" mnemonicParsing="false" text="Sitted Curls" />
+            <Button fx:id="dragCurls" layoutX="216.0" layoutY="43.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="105.0" text="Drag Curls" />
+            <Button fx:id="preacherCurls" layoutX="388.0" layoutY="43.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Preacher Curls" />
+            <Button fx:id="chinUps" layoutX="80.0" layoutY="200.0" mnemonicParsing="false" text="Chin ups" />
+            <Button fx:id="rows" layoutX="241.0" layoutY="201.0" mnemonicParsing="false" text="Rows" />
+            <Button fx:id="bench" layoutX="91.0" layoutY="355.0" mnemonicParsing="false" text="Bench" />
+            <Button fx:id="inclineBench" layoutX="258.0" layoutY="356.0" mnemonicParsing="false" text="Incline Bench" />
+            <Button fx:id="cableCross" layoutX="401.0" layoutY="356.0" mnemonicParsing="false" text="Cable Cross" />
+            <Button fx:id="squat" layoutX="86.0" layoutY="525.0" mnemonicParsing="false" text="Sqaut" />
+            <Button fx:id="legExtension" layoutX="222.0" layoutY="525.0" mnemonicParsing="false" text="Leg Extension" />
+            <Button fx:id="legPress" layoutX="429.0" layoutY="526.0" mnemonicParsing="false" text="Leg Press" />
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>
