@@ -22,3 +22,5 @@ public class FitnessApplication extends Application {
         launch();
     }
 }
+
+// #D2B48C
