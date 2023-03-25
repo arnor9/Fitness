@@ -27,6 +27,12 @@ public class Muscles {
     @FXML
     private Button cableCross;
     @FXML
+    private Button squat;
+    @FXML
+    private Button legExtension;
+    @FXML
+    private Button legPress;
+    @FXML
     private AnchorPane rootPane;
 
     @FXML
@@ -39,6 +45,9 @@ public class Muscles {
         bench.setOnAction(event -> showPopup("The bench press is a classic exercise that targets the chest, shoulders, and triceps. This exercise can be done with a barbell, dumbbells, or a machine."));
         inclineBench.setOnAction(event -> showPopup("Incline bench press is a variation of the bench press that targets the upper chest. This exercise can be done with a barbell, dumbbells, or a machine."));
         cableCross.setOnAction(event -> showPopup("Cable crossovers are a great exercise for targeting the chest muscles. This exercise can be done with a cable machine and allows for a greater range of motion than the bench press."));
+        squat.setOnAction(event -> showPopup("The squat is a compound exercise that targets the lower body, primarily the quads, hamstrings, and glutes. It also engages the core and lower back muscles for stability and support."));
+        legExtension.setOnAction(event -> showPopup("Leg extensions are an isolation exercise that targets the quadriceps. This exercise can be done with a machine and allows for a greater focus on the quads."));
+        legPress.setOnAction(event -> showPopup("The leg press is a compound exercise that targets the lower body, primarily the quads, hamstrings, and glutes. This exercise can be done with a machine and allows for a greater focus on the legs while providing support for the back."));
     }
 
     private void showPopup(String text) {
