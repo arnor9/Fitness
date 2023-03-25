@@ -12,14 +12,23 @@ public class Running implements Initializable {
 
     @FXML
     private ImageView myImage1;
+    @FXML
+    private ImageView myImage3;
 
     //yoga mynd (efsta myndin)
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        //yoga mynd (efsta myndin)
         myImage1.setOnMouseClicked(e -> {
             ViewSwitcher.switchTo(View.YOGA);
         });
+
+        //RUNNING mynd
+        myImage3.setOnMouseClicked(e -> {
+            ViewSwitcher.switchTo(View.ENERGY);
+        });
     }
+    
 
     public void fxback(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.MAIN);

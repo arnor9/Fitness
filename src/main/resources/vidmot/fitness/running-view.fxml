@@ -26,7 +26,7 @@
                <font>
                   <Font name="System Bold" size="25.0" />
                </font></Label>
-                <ImageView fx:id="myImage3" fitHeight="147.0" fitWidth="292.0" layoutX="456.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="147.0" fitWidth="292.0" layoutX="456.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../myndir/running.jpg" />
                     </image>
@@ -51,7 +51,7 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Label>
-            <ImageView fitHeight="163.0" fitWidth="301.0" layoutX="-6.0" layoutY="792.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="myImage3" fitHeight="163.0" fitWidth="301.0" layoutX="-6.0" layoutY="792.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../myndir/energywalk.jpg" />
                </image>
