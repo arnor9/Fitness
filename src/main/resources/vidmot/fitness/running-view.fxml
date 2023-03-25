@@ -2,12 +2,77 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.Running">
-   <children>
-      <Label layoutX="285.0" layoutY="192.0" text="Video" />
-      <Button layoutX="78.0" layoutY="315.0" mnemonicParsing="false" onAction="#fxback" text="tilbaka" />
-   </children>
-</AnchorPane>
+<ScrollPane prefHeight="1055.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.Running">
+    <content>
+        <AnchorPane prefHeight="1000.0" prefWidth="780.0">
+            <children>
+                <ImageView fx:id="myImage1" fitHeight="208.0" fitWidth="767.0" layoutX="-5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/yoga.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="myImage2" fitHeight="144.0" fitWidth="291.0" layoutX="6.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/warmup.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="16.0" layoutY="258.0" prefHeight="47.0" prefWidth="124.0" text="WARMUP" textFill="#e82b2b">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Label>
+                <ImageView fx:id="myImage3" fitHeight="147.0" fitWidth="292.0" layoutX="456.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/running.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="257.0" fitWidth="773.0" layoutX="-7.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/spinning.jpg" />
+                    </image>
+                </ImageView>
+            <Label layoutX="486.0" layoutY="258.0" prefHeight="47.0" prefWidth="124.0" text="RUNNING" textFill="#e82b2b">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="359.0" layoutY="41.0" prefHeight="47.0" prefWidth="124.0" text="YOGA" textAlignment="CENTER" textFill="#e82b2b">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="318.0" layoutY="530.0" prefHeight="47.0" prefWidth="124.0" text="SPINNING" textFill="#e82b2b">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="163.0" fitWidth="301.0" layoutX="-6.0" layoutY="792.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../myndir/energywalk.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="40.0" layoutY="783.0" prefHeight="74.0" prefWidth="175.0" text="ENERGY WALK" textFill="#e82b2b">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="136.0" fitWidth="131.0" layoutX="315.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../myndir/streching.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="325.0" layoutY="243.0" prefHeight="52.0" prefWidth="142.0" text="STRECHING" textFill="#e82b2b">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="22.0" layoutY="962.0" mnemonicParsing="false" onAction="#fxback" text="Back" />
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>

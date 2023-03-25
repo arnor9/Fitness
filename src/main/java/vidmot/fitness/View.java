@@ -5,7 +5,8 @@ public enum View {
     MAIN("main-view.fxml"),
     MUSCLES("muscles-view.fxml"),
     RUNNING("running-view.fxml"),
-    WEIGHTLOSS("weightloss-view.fxml");
+    WEIGHTLOSS("weightloss-view.fxml"),
+    YOGA("yoga-view.fxml");
 
     private String fileName;
 
