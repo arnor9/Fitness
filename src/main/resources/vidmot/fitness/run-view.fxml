@@ -11,9 +11,9 @@
     <children>
         <ScrollPane fitToHeight="true" fitToWidth="true">
             <content>
-                <ImageView fitHeight="1002.0" fitWidth="759.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="1143.0" fitWidth="768.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../myndir/yogaexercise.jpg" />
+                        <Image url="@../../myndir/runningss.jpg" />
                     </image>
                     <VBox.margin>
                         <Insets left="110.0" />

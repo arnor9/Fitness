@@ -64,12 +64,23 @@
         </VBox>
     </right>
     <center>
+        <
+        <
+        <
+        <
+        <
+        <
+        < HEAD
         <VBox prefWidth="449.0" styleClass="vbox_background_center"
               stylesheets="@../../../java/vidmot/fitness/login.css" BorderPane.alignment="CENTER">
+        =======
+        <VBox prefWidth="449.0" styleClass="vbox_background_center" BorderPane.alignment="CENTER">
+            >>>>>>> 6eadf5e33ff8a7dac86b43b01937768841680506
             <children>
                 <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                     <children>
-                        <ImageView fitHeight="37.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="menu" fitHeight="37.0" fitWidth="150.0" pickOnBounds="true"
+                                   preserveRatio="true" styleClass="menu_left">
                             <image>
                                 <Image url="@../../../java/myndir/menu.png"/>
                             </image>

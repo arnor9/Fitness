@@ -17,7 +17,7 @@
                         <Image url="@../../myndir/yoga.jpg" />
                     </image>
                 </ImageView>
-                <ImageView fx:id="myImage2" fitHeight="144.0" fitWidth="291.0" layoutX="6.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="myImage4" fitHeight="144.0" fitWidth="291.0" layoutX="6.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../myndir/warmup.jpg" />
                     </image>
@@ -26,7 +26,7 @@
                <font>
                   <Font name="System Bold" size="25.0" />
                </font></Label>
-                <ImageView fx:id="myImage3" fitHeight="147.0" fitWidth="292.0" layoutX="456.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="myImage5" fitHeight="147.0" fitWidth="292.0" layoutX="456.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../myndir/running.jpg" />
                     </image>
@@ -51,7 +51,7 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Label>
-            <ImageView fitHeight="163.0" fitWidth="301.0" layoutX="-6.0" layoutY="792.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="myImage3" fitHeight="163.0" fitWidth="301.0" layoutX="-6.0" layoutY="792.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../myndir/energywalk.jpg" />
                </image>
@@ -61,12 +61,12 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Label>
-            <ImageView fitHeight="136.0" fitWidth="131.0" layoutX="315.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="myImage2" fitHeight="136.0" fitWidth="131.0" layoutX="315.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../myndir/streching.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="325.0" layoutY="243.0" prefHeight="52.0" prefWidth="142.0" text="STRECHING" textFill="#e82b2b">
+            <Label layoutX="325.0" layoutY="243.0" prefHeight="52.0" prefWidth="142.0" text="STRETCHING" textFill="#e82b2b">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
