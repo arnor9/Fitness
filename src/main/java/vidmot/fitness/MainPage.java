@@ -1,5 +1,7 @@
 package vidmot.fitness;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -36,6 +38,7 @@ public class MainPage implements Initializable {
 
     public void initialize(URL location, ResourceBundle resource) {
         iniLineChart();
+        iniPieChart();
     }
 
     private void iniLineChart() {
@@ -49,6 +52,18 @@ public class MainPage implements Initializable {
         series.getData().add(new XYChart.Data("Sunday", 2));
         fxLineChart.getData().addAll(series);
         fxLineChart.lookup(".chart-plot-background").setStyle("-fx-background-color: transparent;");
+        series.getNode().setStyle("-fx-stroke: #FFD6DC");
+    }
+
+    private void iniPieChart() {
+        ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList(
+                new PieChart.Data("Protein", 15),
+                new PieChart.Data("Whole Grains", 30),
+                new PieChart.Data("Vegtables", 25),
+                new PieChart.Data("Fruits", 20),
+                new PieChart.Data("Fat", 10)
+        );
+        fxPieChart.setData(pieChartData);
     }
 
 
