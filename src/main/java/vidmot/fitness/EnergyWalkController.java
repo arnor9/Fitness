@@ -9,7 +9,7 @@ import java.io.File;
 public class EnergyWalkController {
 
 
-    //spila hljoð þegar ytt er a audio icon
+    //spila hljoð þegar ytt er a audio icon (virkar ekki)
     public void playAudio() {
         File audioFile = new File("/Users/thorsanchez/Desktop/mix.mp3");
         Media audio = new Media(audioFile.toURI().toString());

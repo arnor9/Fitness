@@ -1,0 +1,10 @@
+.vbox_background_center{
+    -fx-background-image:url("../../myndir/backgr_center.jpg")
+}
+.vbox_background_right{
+    -fx-background-image:url("../../myndir/backgr_right.png")
+}
+
+.menu_left{
+    -fx-image:url("../../myndir/menu.png")
+}
