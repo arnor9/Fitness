@@ -13,7 +13,13 @@ public class Running implements Initializable {
     @FXML
     private ImageView myImage1;
     @FXML
+    private ImageView myImage2;
+    @FXML
     private ImageView myImage3;
+    @FXML
+    private ImageView myImage4;
+    @FXML
+    private ImageView myImage5;
 
     //yoga mynd (efsta myndin)
     @Override
@@ -27,8 +33,23 @@ public class Running implements Initializable {
         myImage3.setOnMouseClicked(e -> {
             ViewSwitcher.switchTo(View.ENERGY);
         });
+
+        //Stretching mynd
+        myImage2.setOnMouseClicked(e -> {
+            ViewSwitcher.switchTo(View.STRETCH);
+        });
+
+        //warmup mynd
+        myImage4.setOnMouseClicked(e -> {
+            ViewSwitcher.switchTo(View.WARMUP);
+        });
+
+        //run mynd
+        myImage5.setOnMouseClicked(e -> {
+            ViewSwitcher.switchTo(View.RUN);
+        });
     }
-    
+
 
     public void fxback(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.MAIN);
