@@ -18,8 +18,4 @@ public class LoginController {
     void fxlogin(ActionEvent event) {
         ViewSwitcher.switchTo(View.MAIN);
     }
-    
-    //public void fxlogin(ActionEvent event) {
-    //  ViewSwitcher.switchTo(View.MAIN);
-    // }
 }
