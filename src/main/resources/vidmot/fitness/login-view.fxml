@@ -48,20 +48,11 @@
                 </HBox>
                 <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
                     <children>
-                        <
-                        <
-                        <
-                        <
-                        <
-                        <
-                        < HEAD
                         <CheckBox mnemonicParsing="false" text="Remember me">
                             <HBox.margin>
                                 <Insets right="45.0"/>
                             </HBox.margin>
                         </CheckBox>
-                        =======
-                        >>>>>>> aa64dd16f54a902b5d0b39ba85f166e316262a65
                         <Label text="Forgotten password" textFill="#0f23da">
                             <HBox.margin>
                                 <Insets right="39.0"/>
@@ -80,17 +71,7 @@
                         <ImageView fx:id="menu" fitHeight="37.0" fitWidth="150.0" pickOnBounds="true"
                                    preserveRatio="true" styleClass="menu_left">
                             <image>
-                                <
-                                <
-                                <
-                                <
-                                <
-                                <
-                                < HEAD
                                 <Image url="@../../../java/myndir/menu.png"/>
-                                =======
-                                <Image url="@../../../java/myndir/menu.png"/>
-                                >>>>>>> aa64dd16f54a902b5d0b39ba85f166e316262a65
                             </image>
                             <HBox.margin>
                                 <Insets left="10.0"/>
@@ -98,17 +79,7 @@
                         </ImageView>
                         <Label prefHeight="23.0" prefWidth="83.0" text="MENU">
                             <font>
-                                <
-                                <
-                                <
-                                <
-                                <
-                                <
-                                < HEAD
                                 <Font name="Courier New Bold" size="18.0"/>
-                                =======
-                                <Font name="Courier New Bold" size="18.0"/>
-                                >>>>>>> aa64dd16f54a902b5d0b39ba85f166e316262a65
                             </font>
                             <HBox.margin>
                                 <Insets left="10.0"/>
@@ -120,34 +91,14 @@
                                         style="-fx-background-radius: 50; -fx-background-color: transparent; -fx-border-radius: 50;"
                                         text="Sign Up">
                                     <font>
-                                        <
-                                        <
-                                        <
-                                        <
-                                        <
-                                        <
-                                        < HEAD
                                         <Font name="System Bold" size="16.0"/>
-                                        =======
-                                        <Font name="System Bold" size="16.0"/>
-                                        >>>>>>> aa64dd16f54a902b5d0b39ba85f166e316262a65
                                     </font>
                                 </Button>
                                 <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="90.0"
                                         style="-fx-background-radius: 50; -fx-background-color: #35530a;" text="Login"
                                         textFill="WHITE">
                                     <font>
-                                        <
-                                        <
-                                        <
-                                        <
-                                        <
-                                        <
-                                        < HEAD
                                         <Font name="System Bold" size="16.0"/>
-                                        =======
-                                        <Font name="System Bold" size="16.0"/>
-                                        >>>>>>> aa64dd16f54a902b5d0b39ba85f166e316262a65
                                     </font>
                                 </Button>
                             </children>

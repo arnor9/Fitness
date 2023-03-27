@@ -207,7 +207,7 @@
                                                 </HBox>
                                                 <HBox alignment="CENTER" prefHeight="70.0" prefWidth="304.0">
                                                     <children>
-                                                        <Label text="70%" />
+                                                        <Label fx:id="fxwaterpercent" text="70%" />
                                                     </children>
                                                 </HBox>
                                                 <HBox alignment="CENTER" prefHeight="38.0" prefWidth="304.0">
@@ -422,6 +422,21 @@
                                     <Insets left="10.0" right="10.0" top="10.0" />
                                  </VBox.margin>
                               </Label>
+                              <HBox alignment="CENTER" prefHeight="47.0" prefWidth="420.0">
+                                 <children>
+                                    <TextField promptText="Proein" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="48.0" prefWidth="420.0">
+                                 <children>
+                                    <TextField fx:id="fxwater" promptText="Water" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="51.0" prefWidth="420.0">
+                                 <children>
+                                    <TextField promptText="calories" />
+                                 </children>
+                              </HBox>
                            </children>
                         </VBox>
                      </children>

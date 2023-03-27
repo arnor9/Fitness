@@ -60,7 +60,7 @@ public class MainPage implements Initializable {
 
     private void iniLineChart() {
         XYChart.Series series = new XYChart.Series();
-        series.getData().add(new XYChart.Data("Monday", 0));
+        series.getData().add(new XYChart.Data("Monday", 2));
         series.getData().add(new XYChart.Data("Tuesday", 9));
         series.getData().add(new XYChart.Data("Wednesday", 5));
         series.getData().add(new XYChart.Data("Thursday", 12));
