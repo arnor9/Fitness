@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.LoginController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="780.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.LoginController">
     <right>
         <VBox prefWidth="332.0" BorderPane.alignment="CENTER">
             <children>
@@ -47,12 +47,12 @@
                 </HBox>
                 <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
                     <children>
-                        <CheckBox mnemonicParsing="false" text="Remember me">
-                            <padding>
-                                <Insets right="45.0" />
-                            </padding>
-                        </CheckBox>
-                        <Label text="Forgotten password">
+                  <CheckBox mnemonicParsing="false" text="Remember me">
+                     <HBox.margin>
+                        <Insets right="45.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                        <Label text="Forgotten password" textFill="#0f23da">
                             <HBox.margin>
                                 <Insets right="39.0" />
                             </HBox.margin>
@@ -63,14 +63,13 @@
         </VBox>
     </right>
     <center>
-        <VBox prefWidth="449.0" styleClass="vbox_background_center" stylesheets="@login.css" BorderPane.alignment="CENTER">
-
+        <VBox prefWidth="449.0" styleClass="vbox_background_center" BorderPane.alignment="CENTER">
             <children>
                 <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                     <children>
                         <ImageView fx:id="menu" fitHeight="37.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" styleClass="menu_left">
                             <image>
-                                <Image url="@../../../resources/myndir/menu.png" />
+                                <Image url="@../../../java/myndir/menu.png" />
                             </image>
                             <HBox.margin>
                                 <Insets left="10.0" />
@@ -78,7 +77,7 @@
                         </ImageView>
                         <Label prefHeight="23.0" prefWidth="83.0" text="MENU">
                             <font>
-                                <Font name="Krungthep" size="16.0" />
+                                <Font name="Courier New Bold" size="18.0" />
                             </font>
                             <HBox.margin>
                                 <Insets left="10.0" />
@@ -88,12 +87,12 @@
                             <children>
                                 <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="90.0" style="-fx-background-radius: 50; -fx-background-color: transparent; -fx-border-radius: 50;" text="Sign Up">
                                     <font>
-                                        <Font name="Krungthep" size="16.0" />
+                                        <Font name="System Bold" size="16.0" />
                                     </font>
                                 </Button>
                                 <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="90.0" style="-fx-background-radius: 50; -fx-background-color: #35530a;" text="Login" textFill="WHITE">
                                     <font>
-                                        <Font name="Krungthep" size="16.0" />
+                                        <Font name="System Bold" size="16.0" />
                                     </font>
                                 </Button>
                             </children>

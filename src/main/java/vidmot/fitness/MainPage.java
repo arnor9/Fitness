@@ -8,6 +8,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.PieChart;
 import javafx.scene.chart.XYChart;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -19,6 +23,18 @@ public class MainPage implements Initializable {
 
     @FXML
     private PieChart fxPieChart;
+
+    @FXML
+    private TextField G1;
+
+    @FXML
+    private TextField G2;
+
+    @FXML
+    private Label S1;
+
+    @FXML
+    private Label S2;
 
     public void fxmuscles(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.MUSCLES);
@@ -39,6 +55,7 @@ public class MainPage implements Initializable {
     public void initialize(URL location, ResourceBundle resource) {
         iniLineChart();
         iniPieChart();
+        //Calculate_BMI();
     }
 
     private void iniLineChart() {
@@ -67,4 +84,26 @@ public class MainPage implements Initializable {
     }
 
 
+    public void Calculate_BMI() {
+        if (G2.getText().trim().isEmpty() || G1.getText().trim().isEmpty()) {
+            Alert a = new Alert(Alert.AlertType.NONE);
+            a.setContentText("Please Enter Correct Height and Weight");
+            a.setAlertType(AlertType.ERROR);
+            a.show();
+        } else {
+            float a = Float.parseFloat(G1.getText());
+            float b = Float.parseFloat(G2.getText());
+            float bmi = b / (a * a);
+            S1.setText("" + bmi);
+            if (bmi <= 18.5) {
+                S2.setText("UnderWeight");
+            } else if (bmi <= 24.9) {
+                S2.setText("Normal Weight");
+            } else if (bmi <= 29.9) {
+                S2.setText("OverWeight");
+            } else {
+                S2.setText("Obese");
+            }
+        }
+    }
 }
