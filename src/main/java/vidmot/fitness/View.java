@@ -10,7 +10,8 @@ public enum View {
     ENERGY("energywalk-view.fxml"),
     STRETCH("stretch-view.fxml"),
     WARMUP("warmup-view.fxml"),
-    RUN("run-view.fxml");
+    RUN("run-view.fxml"),
+    SPINNING("spinning-view.fxml");
 
     private String fileName;
 

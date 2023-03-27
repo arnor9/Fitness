@@ -20,6 +20,8 @@ public class Running implements Initializable {
     private ImageView myImage4;
     @FXML
     private ImageView myImage5;
+    @FXML
+    private ImageView myImage6;
 
     //yoga mynd (efsta myndin)
     @Override
@@ -47,6 +49,10 @@ public class Running implements Initializable {
         //run mynd
         myImage5.setOnMouseClicked(e -> {
             ViewSwitcher.switchTo(View.RUN);
+        });
+
+        myImage6.setOnMouseClicked(e -> {
+            ViewSwitcher.switchTo(View.SPINNING);
         });
     }
 

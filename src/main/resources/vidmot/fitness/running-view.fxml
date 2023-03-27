@@ -31,7 +31,7 @@
                         <Image url="@../../myndir/running.jpg" />
                     </image>
                 </ImageView>
-                <ImageView fitHeight="257.0" fitWidth="773.0" layoutX="-7.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="myImage6" fitHeight="257.0" fitWidth="773.0" layoutX="-7.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../myndir/spinning.jpg" />
                     </image>
