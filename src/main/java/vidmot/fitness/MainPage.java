@@ -36,6 +36,18 @@ public class MainPage implements Initializable {
     @FXML
     private Label S2;
 
+    @FXML
+    private TextField fxcalories;
+
+    @FXML
+    private TextField fxprotein;
+
+    @FXML
+    private TextField fxwater;
+
+    @FXML
+    private Label fxwaterpercent;
+
     public void fxmuscles(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.MUSCLES);
     }
@@ -50,6 +62,11 @@ public class MainPage implements Initializable {
 
     public void fxback(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.LOGIN);
+    }
+
+    @FXML
+    void fxsubmit(ActionEvent event) {
+
     }
 
     public void initialize(URL location, ResourceBundle resource) {

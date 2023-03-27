@@ -369,6 +369,9 @@
                                        </HBox.margin>
                                     </TextField>
                                  </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
                               </HBox>
                               <HBox alignment="CENTER" prefHeight="29.0" prefWidth="880.0">
                                  <children>
@@ -378,8 +381,11 @@
                                        </HBox.margin>
                                     </TextField>
                                  </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
                               </HBox>
-                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="880.0">
+                              <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="880.0">
                                  <children>
                                     <Button fx:id="Calculate_BMI" mnemonicParsing="false" onAction="#Calculate_BMI" style="-fx-background-color: transparent;" text="Calculate BMI">
                                        <opaqueInsets>
@@ -393,6 +399,9 @@
                                  <opaqueInsets>
                                     <Insets />
                                  </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets right="20.0" />
+                                 </VBox.margin>
                               </HBox>
                               <HBox alignment="CENTER" prefHeight="26.0" prefWidth="880.0">
                                  <children>
@@ -424,7 +433,7 @@
                               </Label>
                               <HBox alignment="CENTER" prefHeight="47.0" prefWidth="420.0">
                                  <children>
-                                    <TextField promptText="Proein" />
+                                    <TextField fx:id="fxprotein" promptText="Proein" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER" prefHeight="48.0" prefWidth="420.0">
@@ -434,8 +443,20 @@
                               </HBox>
                               <HBox alignment="CENTER" prefHeight="51.0" prefWidth="420.0">
                                  <children>
-                                    <TextField promptText="calories" />
+                                    <TextField fx:id="fxcalories" promptText="calories" />
                                  </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="420.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#fxsubmit" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: transparent;" text="Submit">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets right="20.0" />
+                                 </VBox.margin>
                               </HBox>
                            </children>
                         </VBox>
