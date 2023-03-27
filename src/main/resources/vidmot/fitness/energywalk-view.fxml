@@ -25,11 +25,6 @@
                         <Image url="@../../myndir/powerwalk.jpg" />
                     </image>
                 </ImageView>
-                <ImageView fx:id="audio" fitHeight="99.0" fitWidth="158.0" layoutX="63.0" layoutY="376.0" onMouseClicked="#playAudio" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../myndir/audio.jpg" />
-                    </image>
-                </ImageView>
                 <TextArea cacheShape="false" centerShape="false" layoutX="54.0" layoutY="485.0" prefHeight="72.0" prefWidth="365.0" scaleShape="false" text="This high-energy workout routine will burn calories and &#10;it can be done in a small space. Get ready to sweat." />
                 <Text layoutX="62.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exercises" wrappingWidth="63.117759704589844" />
                 <ImageView fitHeight="53.0" fitWidth="82.0" layoutX="57.0" layoutY="631.0" pickOnBounds="true" preserveRatio="true">

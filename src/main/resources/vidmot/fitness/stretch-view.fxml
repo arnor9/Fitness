@@ -24,11 +24,6 @@
                         <Image url="@../../myndir/stretching.jpg" />
                     </image>
                 </ImageView>
-                <ImageView fx:id="audio" fitHeight="99.0" fitWidth="158.0" layoutX="63.0" layoutY="376.0" onMouseClicked="#playAudio" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../myndir/audio.jpg" />
-                    </image>
-                </ImageView>
                 <Text layoutX="62.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exercises" wrappingWidth="63.117759704589844" />
                 <ImageView fitHeight="53.0" fitWidth="82.0" layoutX="57.0" layoutY="631.0" pickOnBounds="true" preserveRatio="true">
                     <image>
