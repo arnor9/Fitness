@@ -71,7 +71,7 @@
                         <ImageView fx:id="menu" fitHeight="37.0" fitWidth="150.0" pickOnBounds="true"
                                    preserveRatio="true" styleClass="menu_left">
                             <image>
-                                <Image url="@../../../java/myndir/menu.png"/>
+                                <Image url="@../../../resources/myndir/menu.png"/>
                             </image>
                             <HBox.margin>
                                 <Insets left="10.0"/>

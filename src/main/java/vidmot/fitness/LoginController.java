@@ -14,8 +14,10 @@ public class LoginController {
     @FXML
     private TextField fxWeight;
 
+
     @FXML
     void fxlogin(ActionEvent event) {
         ViewSwitcher.switchTo(View.MAIN);
+        //     username.setText(fxName.getText());
     }
 }

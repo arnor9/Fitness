@@ -40,13 +40,29 @@ public class MainPage implements Initializable {
     private TextField fxcalories;
 
     @FXML
-    private TextField fxprotein;
+    private TextField fxsteps;
 
     @FXML
     private TextField fxwater;
 
     @FXML
     private Label fxwaterpercent;
+
+    @FXML
+    private Label fxcaloriespercent;
+
+    @FXML
+    private Label fxstepspercent;
+
+    @FXML
+    private Label fxUsername;
+
+
+    //public Label username;
+
+    // public void breytaLabel() {
+    //   username = fxUsername;
+    //}
 
     public void fxmuscles(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.MUSCLES);
@@ -64,15 +80,16 @@ public class MainPage implements Initializable {
         ViewSwitcher.switchTo(View.LOGIN);
     }
 
-    @FXML
-    void fxsubmit(ActionEvent event) {
-
+    //@FXML
+    public void fxsubmit(ActionEvent event) {
+        fxwaterpercent.setText(fxwater.getText());
+        fxstepspercent.setText(fxsteps.getText());
+        fxcaloriespercent.setText(fxcalories.getText());
     }
 
     public void initialize(URL location, ResourceBundle resource) {
         iniLineChart();
         iniPieChart();
-        //Calculate_BMI();
     }
 
     private void iniLineChart() {

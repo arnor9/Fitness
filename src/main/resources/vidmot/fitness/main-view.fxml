@@ -51,7 +51,7 @@
                                 </ImageView>
                                 <VBox alignment="CENTER" prefHeight="91.0" prefWidth="182.0">
                                     <children>
-                                        <Label prefHeight="24.0" prefWidth="180.0" styleClass="shadow" stylesheets="@../../styles.css" text="Arnór Gunnarsson">
+                                        <Label fx:id="fxUsername" prefHeight="24.0" prefWidth="180.0" styleClass="shadow" stylesheets="@../../styles.css">
                                             <font>
                                                 <Font name="Krungthep" size="18.0" />
                                             </font>
@@ -174,6 +174,20 @@
                                         </Button>
                                     </children>
                                 </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                 <image>
+                                    <Image url="@../../myndir/user.png" />
+                                 </image>
+                              </ImageView>
+                              <Button mnemonicParsing="false" onAction="#fxback" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Back to login">
+                                 <font>
+                                    <Font name="Krungthep" size="11.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
                             </children>
                         </VBox>
                     </children>
@@ -199,40 +213,79 @@
                                     <children>
                                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
                                             <children>
-                                                <Label />
-                                                <HBox alignment="CENTER" prefHeight="51.0" prefWidth="304.0">
+                                                <HBox alignment="CENTER" prefHeight="54.0" prefWidth="266.0">
                                                     <children>
-                                                        <Label text="You have drunk" />
+                                                        <Label fx:id="fxwaterpercent" prefHeight="17.0" prefWidth="86.0" text="70%">
+                                             <font>
+                                                <Font name="Krungthep" size="24.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin></Label>
                                                     </children>
                                                 </HBox>
-                                                <HBox alignment="CENTER" prefHeight="70.0" prefWidth="304.0">
-                                                    <children>
-                                                        <Label fx:id="fxwaterpercent" text="70%" />
-                                                    </children>
-                                                </HBox>
-                                                <HBox alignment="CENTER" prefHeight="38.0" prefWidth="304.0">
-                                                    <children>
-                                                        <Label text="Of your daily water intake " />
-                                                    </children>
-                                                </HBox>
-                                                <HBox alignment="CENTER" prefHeight="49.0" prefWidth="304.0">
-                                                    <children>
-                                                        <Label text="Of the day" />
-                                                    </children>
-                                                </HBox>
+                                    <HBox alignment="CENTER" prefHeight="37.0" prefWidth="266.0">
+                                       <children>
+                                          <Label text="Of Daily Water Intake">
+                                             <font>
+                                                <Font name="Krungthep" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
                                             </children>
                                         </VBox>
                                         <Pane maxHeight="100.0" maxWidth="1.0" minWidth="1.0" prefHeight="47.0" prefWidth="1.0" styleClass="line-color" stylesheets="@../../styles.css" />
-                                        <VBox prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
                                             <children>
-                                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                                    <HBox alignment="CENTER" prefHeight="47.0" prefWidth="266.0">
+                                       <children>
+                                          <Label fx:id="fxcaloriespercent" prefHeight="17.0" prefWidth="69.0" text="50%">
+                                             <font>
+                                                <Font name="Krungthep" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="37.0" prefWidth="266.0">
+                                       <children>
+                                          <Label text="Of Daily Calories">
+                                             <font>
+                                                <Font name="Krungthep" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
                                             </children>
                                         </VBox>
                                         <Pane maxHeight="100.0" maxWidth="1.0" minWidth="1.0" prefHeight="100.0" prefWidth="1.0" styleClass="line-color" stylesheets="@../../styles.css" />
-                                        <VBox prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
-                                            <children>
-                                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
-                                            </children>
+                                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="44.0" prefWidth="266.0">
+                                       <children>
+                                          <Label fx:id="fxstepspercent" prefHeight="17.0" prefWidth="79.0" text="30%">
+                                             <font>
+                                                <Font name="Krungthep" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="37.0" prefWidth="266.0">
+                                       <children>
+                                          <Label text="Of Daily Steps">
+                                             <font>
+                                                <Font name="Krungthep" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
                                         </VBox>
                                     </children>
                                 </HBox>
@@ -283,7 +336,7 @@
                         </HBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" styleClass="container" stylesheets="@../../styles.css">
                             <children>
-                                <Label styleClass="shadow" stylesheets="@../../styles.css" text="Types of Workouts">
+                                <Label styleClass="shadow" stylesheets="@../../styles.css" text="Select Your Workout">
                                     <VBox.margin>
                                         <Insets left="10.0" right="10.0" top="10.0" />
                                     </VBox.margin>
@@ -433,12 +486,12 @@
                               </Label>
                               <HBox alignment="CENTER" prefHeight="47.0" prefWidth="420.0">
                                  <children>
-                                    <TextField fx:id="fxprotein" promptText="Proein" />
+                                    <TextField fx:id="fxsteps" promptText="Steps" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER" prefHeight="48.0" prefWidth="420.0">
                                  <children>
-                                    <TextField fx:id="fxwater" promptText="Water" />
+                                    <TextField fx:id="fxwater" promptText="Water (L)" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER" prefHeight="51.0" prefWidth="420.0">
@@ -462,7 +515,6 @@
                         </VBox>
                      </children>
                   </HBox>
-                        <Button mnemonicParsing="false" onAction="#fxback" text="Back" />
                     </children>
                 </VBox>
             </center>
