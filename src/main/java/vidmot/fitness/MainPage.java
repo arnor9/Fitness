@@ -57,7 +57,7 @@ public class MainPage implements Initializable {
     @FXML
     public Label fxUsername;
 
-    
+
     Data data = Data.getInstance();
 
     public void fxmuscles(ActionEvent actionEvent) {
@@ -77,23 +77,26 @@ public class MainPage implements Initializable {
     }
 
     public String breytavatn() {
-        double vatn = (Double.parseDouble(fxwater.getText()) / 2) * 100;
+        double waters = (Double.parseDouble(fxwater.getText()) / 2) * 100;
+        int water = (int) waters;
         String tostring = "";
-        tostring += vatn;
+        tostring += water;
         return tostring + "%";
     }
 
     public String breytacalories() {
         double calories = (Double.parseDouble(fxcalories.getText()) / 3000) * 100;
+        int calorie = (int) calories;
         String tostring = "";
-        tostring += calories;
+        tostring += calorie;
         return tostring + "%";
     }
 
     public String breytaSteps() {
         double steps = (Double.parseDouble(fxsteps.getText()) / 10000) * 100;
+        int step = (int) steps;
         String tostring = "";
-        tostring += steps;
+        tostring += step;
         return tostring + "%";
     }
 
