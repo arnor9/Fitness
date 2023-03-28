@@ -55,14 +55,10 @@ public class MainPage implements Initializable {
     private Label fxstepspercent;
 
     @FXML
-    private Label fxUsername;
+    public Label fxUsername;
 
-
-    //public Label username;
-
-    // public void breytaLabel() {
-    //   username = fxUsername;
-    //}
+    
+    Data data = Data.getInstance();
 
     public void fxmuscles(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.MUSCLES);
@@ -80,16 +76,42 @@ public class MainPage implements Initializable {
         ViewSwitcher.switchTo(View.LOGIN);
     }
 
+    public String breytavatn() {
+        double vatn = (Double.parseDouble(fxwater.getText()) / 2) * 100;
+        String tostring = "";
+        tostring += vatn;
+        return tostring + "%";
+    }
+
+    public String breytacalories() {
+        double calories = (Double.parseDouble(fxcalories.getText()) / 3000) * 100;
+        String tostring = "";
+        tostring += calories;
+        return tostring + "%";
+    }
+
+    public String breytaSteps() {
+        double steps = (Double.parseDouble(fxsteps.getText()) / 10000) * 100;
+        String tostring = "";
+        tostring += steps;
+        return tostring + "%";
+    }
+
+
     //@FXML
     public void fxsubmit(ActionEvent event) {
-        fxwaterpercent.setText(fxwater.getText());
-        fxstepspercent.setText(fxsteps.getText());
-        fxcaloriespercent.setText(fxcalories.getText());
+        fxwaterpercent.setText(breytavatn());
+        fxstepspercent.setText(breytaSteps());
+        fxcaloriespercent.setText(breytacalories());
     }
+
 
     public void initialize(URL location, ResourceBundle resource) {
         iniLineChart();
         iniPieChart();
+        fxUsername.setText(data.getUsername());
+        G1.setText(data.getHeight());
+        G2.setText(data.getWeight());
     }
 
     private void iniLineChart() {
