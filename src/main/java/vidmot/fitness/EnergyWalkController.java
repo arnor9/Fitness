@@ -1,6 +1,3 @@
-package vidmot.fitness;
-
-
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
@@ -25,11 +22,9 @@ public class EnergyWalkController {
         });
 
         /*
-
         public void fxback (ActionEvent event){
             ViewSwitcher.switchTo(View.RUNNING);
         }
-
          */
     }
 }

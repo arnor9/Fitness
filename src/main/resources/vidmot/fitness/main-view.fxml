@@ -365,7 +365,7 @@
                                         <Pane maxHeight="100.0" maxWidth="1.0" minWidth="1.0" prefHeight="87.0" prefWidth="4.0" styleClass="line-color" stylesheets="@../../styles.css" />
                                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" HBox.hgrow="ALWAYS">
                                             <children>
-                                                <Button mnemonicParsing="false" onAction="#fxweightloss" prefHeight="26.0" prefWidth="208.0" style="-fx-background-color: transparent;" stylesheets="@../../styles.css" text="Lose weight">
+                                                <Button fx:id="fxweightbutton" mnemonicParsing="false" onAction="#fxweightloss" prefHeight="26.0" prefWidth="208.0" style="-fx-background-color: transparent;" stylesheets="@../../styles.css" text="Lose weight">
                                                     <font>
                                                         <Font name="Krungthep" size="14.0" />
                                                     </font>

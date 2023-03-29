@@ -9,3 +9,4 @@ module vidmot.fitness {
     opens vidmot.fitness to javafx.fxml;
     exports vidmot.fitness;
 }
+
