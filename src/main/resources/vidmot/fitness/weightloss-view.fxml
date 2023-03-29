@@ -1,232 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.String?>
-<ScrollPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="vidmot.fitness.WeightLoss">
+<?import javafx.scene.layout.AnchorPane?>
+<ScrollPane prefHeight="715.0" prefWidth="780.0" stylesheets="@MusclesCSS.css" xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.Muscles">
     <content>
-        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-                    prefHeight="890.0" prefWidth="1200.0" styleClass="gradient-background"
-                    stylesheets="@../../styles.css">
-            <top>
-                <HBox alignment="CENTER" prefHeight="61.0" prefWidth="200.0" spacing="20.0"
-                      BorderPane.alignment="CENTER">
-                    <children>
-                        <Label alignment="CENTER" prefHeight="60.0" prefWidth="214.0" styleClass="shadow"
-                               stylesheets="@../../styles.css" text="ADMIN DASHBOARD">
-                            <font>
-                                <Font name="Krungthep" size="18.0"/>
-                            </font>
-                        </Label>
-                        <Pane maxHeight="1.0" prefHeight="1.0" prefWidth="200.0" styleClass="line-color"
-                              stylesheets="@../../styles.css" HBox.hgrow="ALWAYS"/>
-                    </children>
-                    <BorderPane.margin>
-                        <Insets left="20.0" right="20.0"/>
-                    </BorderPane.margin>
-                </HBox>
-            </top>
-            <left>
-                <VBox prefHeight="200.0" prefWidth="290.0" spacing="10.0" styleClass="container"
-                      stylesheets="@../../styles.css" BorderPane.alignment="TOP_CENTER">
-                    <BorderPane.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
-                    </BorderPane.margin>
-                    <children>
-                        <HBox alignment="CENTER" prefHeight="91.0" prefWidth="290.0">
-                            <children>
-                                <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true"
-                                           styleClass="shadow">
-                                    <image>
-                                        <Image url="@../../myndir/user.png"/>
-                                    </image>
-                                </ImageView>
-                                <VBox alignment="CENTER" prefHeight="91.0" prefWidth="182.0">
-                                    <children>
-                                        <Label fx:id="fxUsername" alignment="CENTER" contentDisplay="CENTER"
-                                               prefHeight="24.0" prefWidth="182.0" styleClass="shadow"
-                                               stylesheets="@../../styles.css">
-                                            <font>
-                                                <Font name="Krungthep" size="18.0"/>
-                                            </font>
-                                            <VBox.margin>
-                                                <Insets bottom="2.0"/>
-                                            </VBox.margin>
-                                        </Label>
-                                        <Label styleClass="shadow" stylesheets="@../../styles.css" text="Athlete">
-                                            <font>
-                                                <Font name="Krungthep" size="14.0"/>
-                                            </font>
-                                        </Label>
-                                    </children>
-                                </VBox>
-                            </children>
-                        </HBox>
-                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1.0" prefWidth="250.0"
-                              styleClass="line-color" stylesheets="@../../styles.css">
-                            <VBox.margin>
-                                <Insets left="20.0"/>
-                            </VBox.margin>
-                        </Pane>
-                        <VBox prefHeight="538.0" prefWidth="290.0" spacing="20.0">
-                            <children>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
-                                      stylesheets="@../../styles.css">
-                                    <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
-                                                   preserveRatio="true" styleClass="shadow">
-                                            <image>
-                                                <Image url="@../../myndir/home2.png"/>
-                                            </image>
-                                        </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0"
-                                                style="-fx-background-color: transparent;" styleClass="shadow"
-                                                stylesheets="@../../styles.css" text="Dashboaard">
-                                            <font>
-                                                <Font name="Krungthep" size="11.0"/>
-                                            </font>
-                                        </Button>
-                                    </children>
-                                    <styleClass>
-                                        <String fx:value="button-container-mouse-moved"/>
-                                        <String fx:value="selected-button-container"/>
-                                    </styleClass>
-                                </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
-                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
-                                    <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
-                                                   preserveRatio="true" styleClass="shadow">
-                                            <image>
-                                                <Image url="@../../myndir/locations.png"/>
-                                            </image>
-                                        </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0"
-                                                style="-fx-background-color: transparent;" styleClass="shadow"
-                                                stylesheets="@../../styles.css" text="Gym location">
-                                            <font>
-                                                <Font name="Krungthep" size="11.0"/>
-                                            </font>
-                                        </Button>
-                                    </children>
-                                </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
-                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
-                                    <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
-                                                   preserveRatio="true" styleClass="shadow">
-                                            <image>
-                                                <Image url="@../../myndir/calander.png"/>
-                                            </image>
-                                        </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0"
-                                                style="-fx-background-color: transparent;" styleClass="shadow"
-                                                stylesheets="@../../styles.css" text="Calander">
-                                            <font>
-                                                <Font name="Krungthep" size="11.0"/>
-                                            </font>
-                                        </Button>
-                                    </children>
-                                </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
-                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
-                                    <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
-                                                   preserveRatio="true" styleClass="shadow">
-                                            <image>
-                                                <Image url="@../../myndir/society.png"/>
-                                            </image>
-                                        </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0"
-                                                style="-fx-background-color: transparent;" styleClass="shadow"
-                                                stylesheets="@../../styles.css" text="Gym Bro's">
-                                            <font>
-                                                <Font name="Krungthep" size="11.0"/>
-                                            </font>
-                                        </Button>
-                                    </children>
-                                </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
-                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
-                                    <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
-                                                   preserveRatio="true" styleClass="shadow">
-                                            <image>
-                                                <Image url="@../../myndir/onlinestore.png"/>
-                                            </image>
-                                        </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0"
-                                                style="-fx-background-color: transparent;" styleClass="shadow"
-                                                stylesheets="@../../styles.css" text="Online store">
-                                            <font>
-                                                <Font name="Krungthep" size="11.0"/>
-                                            </font>
-                                        </Button>
-                                    </children>
-                                </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
-                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
-                                    <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
-                                                   preserveRatio="true" styleClass="shadow">
-                                            <image>
-                                                <Image url="@../../myndir/recipes.png"/>
-                                            </image>
-                                        </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0"
-                                                style="-fx-background-color: transparent;" styleClass="shadow"
-                                                stylesheets="@../../styles.css" text="Recipes">
-                                            <font>
-                                                <Font name="Krungthep" size="11.0"/>
-                                            </font>
-                                        </Button>
-                                    </children>
-                                </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
-                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
-                                    <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
-                                                   preserveRatio="true" styleClass="shadow">
-                                            <image>
-                                                <Image url="@../../myndir/information.png"/>
-                                            </image>
-                                        </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0"
-                                                style="-fx-background-color: transparent;" styleClass="shadow"
-                                                stylesheets="@../../styles.css" text="Feedback">
-                                            <font>
-                                                <Font name="Krungthep" size="11.0"/>
-                                            </font>
-                                        </Button>
-                                    </children>
-                                </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
-                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
-                                    <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
-                                                   preserveRatio="true" styleClass="shadow">
-                                            <image>
-                                                <Image url="@../../myndir/back.png"/>
-                                            </image>
-                                        </ImageView>
-                                        <Button mnemonicParsing="false" onAction="#fxback" prefHeight="26.0"
-                                                prefWidth="95.0" style="-fx-background-color: transparent;"
-                                                styleClass="shadow" stylesheets="@../../styles.css" text="Logout">
-                                            <font>
-                                                <Font name="Krungthep" size="11.0"/>
-                                            </font>
-                                        </Button>
-                                    </children>
-                                </HBox>
-                            </children>
-                        </VBox>
-                    </children>
-                </VBox>
-            </left>
-        </BorderPane>
+        <AnchorPane prefHeight="755.0" prefWidth="606.0" styleClass="gradient-background">
+            <children>
+                <Label layoutX="35.0" layoutY="25.0" prefHeight="17.0" prefWidth="42.0" text="Biceps"/>
+                <Button layoutX="516.0" layoutY="21.0" mnemonicParsing="false" onAction="#fxback" text="tilbaka"/>
+                <ImageView fx:id="myImage" fitHeight="97.0" fitWidth="155.0" layoutX="35.0" layoutY="66.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/sittedcurls.jpg"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="99.0" fitWidth="158.0" layoutX="189.0" layoutY="66.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/Standingcurls.jpg"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="96.0" fitWidth="167.0" layoutX="358.0" layoutY="66.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/preachercurls.jpg"/>
+                    </image>
+                </ImageView>
+                <Label layoutX="35.0" layoutY="183.0" prefHeight="17.0" prefWidth="42.0" text="Back"/>
+                <ImageView fx:id="myImage1" fitHeight="100.0" fitWidth="145.0" layoutX="35.0" layoutY="224.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/Chinups.jpg"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="90.0" fitWidth="151.0" layoutX="189.0" layoutY="223.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/Rows.jpg"/>
+                    </image>
+                </ImageView>
+                <Label layoutX="35.0" layoutY="338.0" prefHeight="17.0" prefWidth="42.0" text="Chest"/>
+                <ImageView fx:id="myImage2" fitHeight="111.0" fitWidth="167.0" layoutX="35.0" layoutY="379.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/Bekkpressa.jpg"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="96.0" fitWidth="116.0" layoutX="228.0" layoutY="379.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/inclinebekkur.jpg"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="96.0" fitWidth="167.0" layoutX="370.0" layoutY="381.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/cablecross.jpg"/>
+                    </image>
+                </ImageView>
+                <Label layoutX="35.0" layoutY="508.0" prefHeight="17.0" prefWidth="42.0" text="Legs"/>
+                <ImageView fx:id="myImage3" fitHeight="97.0" fitWidth="155.0" layoutX="35.0" layoutY="549.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/squata.jpg"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="99.0" fitWidth="158.0" layoutX="189.0" layoutY="549.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/legextention.jpg"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="113.0" fitWidth="196.0" layoutX="358.0" layoutY="549.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../myndir/pressa.jpg"/>
+                    </image>
+                </ImageView>
+                <Button fx:id="sittedCurls" layoutX="67.0" layoutY="43.0" mnemonicParsing="false" text="Sitted Curls"/>
+                <Button fx:id="dragCurls" layoutX="216.0" layoutY="43.0" mnemonicParsing="false" prefHeight="26.0"
+                        prefWidth="105.0" text="Drag Curls"/>
+                <Button fx:id="preacherCurls" layoutX="388.0" layoutY="43.0" mnemonicParsing="false" prefHeight="26.0"
+                        prefWidth="98.0" text="Preacher Curls"/>
+                <Button fx:id="chinUps" layoutX="80.0" layoutY="200.0" mnemonicParsing="false" text="Chin ups"/>
+                <Button fx:id="rows" layoutX="241.0" layoutY="201.0" mnemonicParsing="false" text="Rows"/>
+                <Button fx:id="bench" layoutX="91.0" layoutY="355.0" mnemonicParsing="false" text="Bench"/>
+                <Button fx:id="inclineBench" layoutX="258.0" layoutY="356.0" mnemonicParsing="false"
+                        text="Incline Bench"/>
+                <Button fx:id="cableCross" layoutX="401.0" layoutY="356.0" mnemonicParsing="false" text="Cable Cross"/>
+                <Button fx:id="squat" layoutX="86.0" layoutY="525.0" mnemonicParsing="false" text="Sqaut"/>
+                <Button fx:id="legExtension" layoutX="222.0" layoutY="525.0" mnemonicParsing="false"
+                        text="Leg Extension"/>
+                <Button fx:id="legPress" layoutX="429.0" layoutY="526.0" mnemonicParsing="false" text="Leg Press"/>
+            </children>
+        </AnchorPane>
     </content>
 </ScrollPane>
