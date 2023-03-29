@@ -13,10 +13,6 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-import java.awt.*;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -169,25 +165,4 @@ public class MainPage implements Initializable {
             }
         }
     }
-
-    //online store takki
-    @FXML
-    private void OnlineStore(ActionEvent event) {
-        try {
-            Desktop.getDesktop().browse(new URI("https://mettasport.is"));
-        } catch (IOException | URISyntaxException e) {
-
-        }
-    }
-
-    //Feedback takki
-    @FXML
-    private void Feedback(ActionEvent event) {
-        try {
-            Desktop.getDesktop().mail(new URI("mailto:feedback@fitgo.com?subject=Feedback%20on%20my%20app"));
-        } catch (IOException | URISyntaxException e) {
-        }
-    }
-
-
 }
