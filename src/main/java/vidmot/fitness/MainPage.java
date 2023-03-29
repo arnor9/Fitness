@@ -13,6 +13,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -110,15 +111,36 @@ public class MainPage implements Initializable {
 
 
     public void initialize(URL location, ResourceBundle resource) {
-        iniLineChart();
+        try {
+            iniLineChart();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         iniPieChart();
         fxUsername.setText(data.getUsername());
         G1.setText(data.getHeight());
         G2.setText(data.getWeight());
     }
 
-    private void iniLineChart() {
+    private void iniLineChart() throws IOException {
         XYChart.Series series = new XYChart.Series();
+        //NumberAxis xAxis = new NumberAxis();
+        //NumberAxis yAxis = new NumberAxis();
+
+        //LineChart<Number, Number> lineChart = new LineChart<>(xAxis, yAxis);
+        //lineChart.setTitle("BMI");
+
+        //BufferedReader reader = new BufferedReader(new FileReader("BMI_muscle.txt"));
+        //String line;
+        //while ((line = reader.readLine()) != null) {
+        //  String[] parts = line.split(",");
+        //double x = Double.parseDouble(parts[0]);
+        //Double y = Double.parseDouble(parts[1]);
+        //XYChart.Series<Number, Number> series = new XYChart.Series<>();
+        //series.getData().add(new XYChart.Data<>(x, y));
+        //lineChart.getData().add(series);
+        //}
+        //reader.close();
         series.getData().add(new XYChart.Data("Monday", 2));
         series.getData().add(new XYChart.Data("Tuesday", 9));
         series.getData().add(new XYChart.Data("Wednesday", 5));
