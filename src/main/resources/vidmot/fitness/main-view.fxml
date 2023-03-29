@@ -55,9 +55,9 @@
                                             <font>
                                                 <Font name="Krungthep" size="18.0" />
                                             </font>
-                                 <VBox.margin>
-                                    <Insets bottom="2.0" />
-                                 </VBox.margin>
+                                            <VBox.margin>
+                                                <Insets bottom="2.0" />
+                                            </VBox.margin>
                                         </Label>
                                         <Label styleClass="shadow" stylesheets="@../../styles.css" text="Athlete">
                                             <font>
@@ -142,7 +142,7 @@
                                                 <Image url="@../../myndir/onlinestore.png" />
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Online store">
+                                        <Button fx:id="fxOnlineStore" mnemonicParsing="false" onAction="#OnlineStore" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Online store">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>
@@ -170,27 +170,27 @@
                                                 <Image url="@../../myndir/information.png" />
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Feedback">
+                                        <Button mnemonicParsing="false" onAction="#Feedback" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Feedback">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>
                                         </Button>
                                     </children>
                                 </HBox>
-                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
-                           <children>
-                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
-                                 <image>
-                                    <Image url="@../../myndir/back.png" />
-                                 </image>
-                              </ImageView>
-                              <Button mnemonicParsing="false" onAction="#fxback" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Logout">
-                                 <font>
-                                    <Font name="Krungthep" size="11.0" />
-                                 </font>
-                              </Button>
-                           </children>
-                        </HBox>
+                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
+                                    <children>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                            <image>
+                                                <Image url="@../../myndir/back.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Button mnemonicParsing="false" onAction="#fxback" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Logout">
+                                            <font>
+                                                <Font name="Krungthep" size="11.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </HBox>
                             </children>
                         </VBox>
                     </children>
@@ -219,76 +219,77 @@
                                                 <HBox alignment="CENTER" prefHeight="54.0" prefWidth="266.0">
                                                     <children>
                                                         <Label fx:id="fxwaterpercent" prefHeight="17.0" prefWidth="86.0" text="0%">
-                                             <font>
-                                                <Font name="Krungthep" size="24.0" />
-                                             </font>
-                                             <HBox.margin>
-                                                <Insets left="20.0" />
-                                             </HBox.margin></Label>
+                                                            <font>
+                                                                <Font name="Krungthep" size="24.0" />
+                                                            </font>
+                                                            <HBox.margin>
+                                                                <Insets left="20.0" />
+                                                            </HBox.margin>
+                                                        </Label>
                                                     </children>
                                                 </HBox>
-                                    <HBox alignment="CENTER" prefHeight="37.0" prefWidth="266.0">
-                                       <children>
-                                          <Label text="Of Daily Water Intake">
-                                             <font>
-                                                <Font name="Krungthep" size="14.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
+                                                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="266.0">
+                                                    <children>
+                                                        <Label text="Of Daily Water Intake">
+                                                            <font>
+                                                                <Font name="Krungthep" size="14.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
                                             </children>
                                         </VBox>
                                         <Pane maxHeight="100.0" maxWidth="1.0" minWidth="1.0" prefHeight="47.0" prefWidth="1.0" styleClass="line-color" stylesheets="@../../styles.css" />
                                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
                                             <children>
-                                    <HBox alignment="CENTER" prefHeight="47.0" prefWidth="266.0">
-                                       <children>
-                                          <Label fx:id="fxcaloriespercent" prefHeight="17.0" prefWidth="69.0" text="0%">
-                                             <font>
-                                                <Font name="Krungthep" size="24.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                       <VBox.margin>
-                                          <Insets left="15.0" />
-                                       </VBox.margin>
-                                    </HBox>
-                                    <HBox alignment="CENTER" prefHeight="37.0" prefWidth="266.0">
-                                       <children>
-                                          <Label text="Of Daily Calories">
-                                             <font>
-                                                <Font name="Krungthep" size="14.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
+                                                <HBox alignment="CENTER" prefHeight="47.0" prefWidth="266.0">
+                                                    <children>
+                                                        <Label fx:id="fxcaloriespercent" prefHeight="17.0" prefWidth="69.0" text="0%">
+                                                            <font>
+                                                                <Font name="Krungthep" size="24.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                    <VBox.margin>
+                                                        <Insets left="15.0" />
+                                                    </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="266.0">
+                                                    <children>
+                                                        <Label text="Of Daily Calories">
+                                                            <font>
+                                                                <Font name="Krungthep" size="14.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
                                             </children>
                                         </VBox>
                                         <Pane maxHeight="100.0" maxWidth="1.0" minWidth="1.0" prefHeight="100.0" prefWidth="1.0" styleClass="line-color" stylesheets="@../../styles.css" />
                                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <HBox alignment="CENTER" prefHeight="44.0" prefWidth="266.0">
-                                       <children>
-                                          <Label fx:id="fxstepspercent" prefHeight="17.0" prefWidth="79.0" text="0%">
-                                             <font>
-                                                <Font name="Krungthep" size="24.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                       <VBox.margin>
-                                          <Insets left="15.0" />
-                                       </VBox.margin>
-                                    </HBox>
-                                    <HBox alignment="CENTER" prefHeight="37.0" prefWidth="266.0">
-                                       <children>
-                                          <Label text="Of Daily Steps">
-                                             <font>
-                                                <Font name="Krungthep" size="14.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                 </children>
+                                            <children>
+                                                <HBox alignment="CENTER" prefHeight="44.0" prefWidth="266.0">
+                                                    <children>
+                                                        <Label fx:id="fxstepspercent" prefHeight="17.0" prefWidth="79.0" text="0%">
+                                                            <font>
+                                                                <Font name="Krungthep" size="24.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                    <VBox.margin>
+                                                        <Insets left="15.0" />
+                                                    </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="266.0">
+                                                    <children>
+                                                        <Label text="Of Daily Steps">
+                                                            <font>
+                                                                <Font name="Krungthep" size="14.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
                                         </VBox>
                                     </children>
                                 </HBox>
@@ -397,127 +398,127 @@
                                 <Insets right="10.0" top="10.0" />
                             </VBox.margin>
                         </VBox>
-                  <HBox>
-                     <children>
-                              <VBox maxWidth="440.0" minWidth="440.0" prefHeight="260.0" prefWidth="440.0" styleClass="container" stylesheets="@../../styles.css">
-                           <children>
-                              <Label styleClass="shadow" stylesheets="@../../styles.css" text="Calculator">
-                                 <font>
-                                    <Font name="Krungthep" size="18.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets left="10.0" right="10.0" top="10.0" />
-                                 </VBox.margin>
-                              </Label>
-                              <HBox alignment="CENTER" prefHeight="29.0" prefWidth="880.0">
-                                 <VBox.margin>
-                                    <Insets top="10.0" />
-                                 </VBox.margin>
-                                 <children>
-                                    <TextField alignment="CENTER" promptText="How old are you?" />
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER" prefHeight="31.0" prefWidth="880.0">
-                                 <children>
-                                    <TextField fx:id="G1" alignment="CENTER" promptText="Your height (m)">
-                                       <HBox.margin>
-                                          <Insets top="10.0" />
-                                       </HBox.margin>
-                                    </TextField>
-                                 </children>
-                                 <VBox.margin>
-                                    <Insets top="10.0" />
-                                 </VBox.margin>
-                              </HBox>
-                              <HBox alignment="CENTER" prefHeight="29.0" prefWidth="880.0">
-                                 <children>
-                                    <TextField fx:id="G2" alignment="CENTER" promptText="Your weight">
-                                       <HBox.margin>
-                                          <Insets top="10.0" />
-                                       </HBox.margin>
-                                    </TextField>
-                                 </children>
-                                 <VBox.margin>
-                                    <Insets top="10.0" />
-                                 </VBox.margin>
-                              </HBox>
-                              <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="880.0">
-                                 <children>
-                                    <Button fx:id="Calculate_BMI" mnemonicParsing="false" onAction="#Calculate_BMI" style="-fx-background-color: transparent;" text="Calculate BMI">
-                                       <opaqueInsets>
-                                          <Insets />
-                                       </opaqueInsets>
-                                       <HBox.margin>
-                                          <Insets left="32.0" top="10.0" />
-                                       </HBox.margin>
-                                    </Button>
-                                 </children>
-                                 <opaqueInsets>
-                                    <Insets />
-                                 </opaqueInsets>
-                                 <VBox.margin>
-                                    <Insets right="20.0" />
-                                 </VBox.margin>
-                              </HBox>
-                              <HBox alignment="CENTER" prefHeight="26.0" prefWidth="880.0">
-                                 <children>
-                                    <Label fx:id="S1" prefHeight="17.0" prefWidth="101.0" />
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-                                 <children>
-                                    <Label fx:id="S2" prefHeight="17.0" prefWidth="113.0" />
-                                 </children>
-                              </HBox>
-                           </children>
-                           <HBox.margin>
-                              <Insets right="10.0" top="10.0" />
-                           </HBox.margin>
-                        </VBox>
-                        <VBox prefHeight="212.0" prefWidth="455.0" styleClass="container" stylesheets="@../../styles.css">
-                           <HBox.margin>
-                              <Insets left="10.0" right="10.0" top="10.0" />
-                           </HBox.margin>
-                           <children>
-                              <Label styleClass="shadow" stylesheets="@../../styles.css" text="Intake ">
-                                 <font>
-                                    <Font name="Krungthep" size="18.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets left="10.0" right="10.0" top="10.0" />
-                                 </VBox.margin>
-                              </Label>
-                              <HBox alignment="CENTER" prefHeight="47.0" prefWidth="420.0">
-                                 <children>
-                                    <TextField fx:id="fxsteps" promptText="Steps" />
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER" prefHeight="48.0" prefWidth="420.0">
-                                 <children>
-                                    <TextField fx:id="fxwater" promptText="Water (L)" />
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER" prefHeight="51.0" prefWidth="420.0">
-                                 <children>
-                                    <TextField fx:id="fxcalories" promptText="Calories" />
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="420.0">
-                                 <children>
-                                    <Button mnemonicParsing="false" onAction="#fxsubmit" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: transparent;" text="Submit">
-                                       <HBox.margin>
-                                          <Insets />
-                                       </HBox.margin>
-                                    </Button>
-                                 </children>
-                                 <VBox.margin>
-                                    <Insets right="20.0" />
-                                 </VBox.margin>
-                              </HBox>
-                           </children>
-                        </VBox>
-                     </children>
-                  </HBox>
+                        <HBox>
+                            <children>
+                                <VBox maxWidth="440.0" minWidth="440.0" prefHeight="260.0" prefWidth="440.0" styleClass="container" stylesheets="@../../styles.css">
+                                    <children>
+                                        <Label styleClass="shadow" stylesheets="@../../styles.css" text="Calculator">
+                                            <font>
+                                                <Font name="Krungthep" size="18.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="10.0" right="10.0" top="10.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <HBox alignment="CENTER" prefHeight="29.0" prefWidth="880.0">
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                            <children>
+                                                <TextField alignment="CENTER" promptText="How old are you?" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="31.0" prefWidth="880.0">
+                                            <children>
+                                                <TextField fx:id="G1" alignment="CENTER" promptText="Your height (m)">
+                                                    <HBox.margin>
+                                                        <Insets top="10.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="29.0" prefWidth="880.0">
+                                            <children>
+                                                <TextField fx:id="G2" alignment="CENTER" promptText="Your weight">
+                                                    <HBox.margin>
+                                                        <Insets top="10.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="880.0">
+                                            <children>
+                                                <Button fx:id="Calculate_BMI" mnemonicParsing="false" onAction="#Calculate_BMI" style="-fx-background-color: transparent;" text="Calculate BMI">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                    <HBox.margin>
+                                                        <Insets left="32.0" top="10.0" />
+                                                    </HBox.margin>
+                                                </Button>
+                                            </children>
+                                            <opaqueInsets>
+                                                <Insets />
+                                            </opaqueInsets>
+                                            <VBox.margin>
+                                                <Insets right="20.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="26.0" prefWidth="880.0">
+                                            <children>
+                                                <Label fx:id="S1" prefHeight="17.0" prefWidth="101.0" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Label fx:id="S2" prefHeight="17.0" prefWidth="113.0" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets right="10.0" top="10.0" />
+                                    </HBox.margin>
+                                </VBox>
+                                <VBox prefHeight="212.0" prefWidth="455.0" styleClass="container" stylesheets="@../../styles.css">
+                                    <HBox.margin>
+                                        <Insets left="10.0" right="10.0" top="10.0" />
+                                    </HBox.margin>
+                                    <children>
+                                        <Label styleClass="shadow" stylesheets="@../../styles.css" text="Intake ">
+                                            <font>
+                                                <Font name="Krungthep" size="18.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="10.0" right="10.0" top="10.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <HBox alignment="CENTER" prefHeight="47.0" prefWidth="420.0">
+                                            <children>
+                                                <TextField fx:id="fxsteps" promptText="Steps" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="48.0" prefWidth="420.0">
+                                            <children>
+                                                <TextField fx:id="fxwater" promptText="Water (L)" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="420.0">
+                                            <children>
+                                                <TextField fx:id="fxcalories" promptText="Calories" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="420.0">
+                                            <children>
+                                                <Button mnemonicParsing="false" onAction="#fxsubmit" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: transparent;" text="Submit">
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </Button>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets right="20.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
                     </children>
                 </VBox>
             </center>

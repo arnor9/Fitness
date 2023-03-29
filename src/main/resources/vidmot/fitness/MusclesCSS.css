@@ -4,3 +4,7 @@
 .blue-background {
     -fx-background-color: blue;
 }
+
+.gradient-background{
+    -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#C5D4EB,#f2fcfe);
+}
