@@ -142,7 +142,7 @@
                                                 <Image url="@../../myndir/onlinestore.png" />
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Online store">
+                                        <Button mnemonicParsing="false" onAction="#OnlineStore" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Online store">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>
@@ -170,7 +170,7 @@
                                                 <Image url="@../../myndir/information.png" />
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Feedback">
+                                        <Button mnemonicParsing="false" onAction="#Feedback" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Feedback">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>
