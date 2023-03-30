@@ -20,54 +20,45 @@ public class CalendarController {
     @FXML
     public Label fxworkout;
     @FXML
-    private Label fxSnidinnDagur;        // Sniðinn dagur - uppfærður með handler
+    private Label fxSnidinnDagur;
     @FXML
-    private Label fxDagurSjalfvirkt;     // Sniðinn dagur - uppfærður með binding
+    private Label fxDagurSjalfvirkt;
     @FXML
-    private DatePicker fxDagatal;   // dagatal - hægt að velja dagsetningu
+    private DatePicker fxDagatal;
 
     private final static int ISLAND = 108;
 
-    // static formatter fyrir dagsetningu
+
     private static final DateTimeFormatter f = DateTimeFormatter.ofPattern("EEEE dd MMMM yyyy", Locale.ENGLISH);
 
 
     public void initialize() {
-        fxDagatal.setValue(LocalDate.now());    // setjum núverandi dagsetningu í upphafi
-        fxSnidinnDagur.setText(fxDagatal.getValue().format(f)); // setjum textann sem sniðna dagsetningu
+        fxDagatal.setValue(LocalDate.now());
+        fxSnidinnDagur.setText(fxDagatal.getValue().format(f));
 
         // setjum upp reglurnar
         StringBinding dagatalBinding = new StringBinding() {
-            {                                           // smiður
-                super.bind(fxDagatal.valueProperty());  // Nýtt StringBinding sem er háð fxDagatal.valueProperty()
+            {
+                super.bind(fxDagatal.valueProperty());
             }
 
-            protected String computeValue() {           // Þetta á að reikna þegar fxDagatal.valueProperty() breytist
+            protected String computeValue() {
                 return fxDagatal.valueProperty().get().format(f);
             }
         };
-        fxDagurSjalfvirkt.textProperty().bind(dagatalBinding);  // fxDagurSjalfvirkt uppfært sjálfvirkt með binding - sami formatter
+        fxDagurSjalfvirkt.textProperty().bind(dagatalBinding);
     }
 
 
-    /**
-     * Handler fyrir að velja dagsetningu í datepicker. Gerir ekkert nema prentar út dagsetninguna
-     *
-     * @param actionEvent ónotað
-     */
     public void veljaDagsetningu(ActionEvent actionEvent) {
-        // Get the selected date from the DatePicker
         LocalDate selectedDate = fxDagatal.getValue();
 
-        // Format the selected date as a string
         String formattedDate = selectedDate.format(f);
 
-        // Generate a random workout
         String[] workouts = {"Biceps", "Back", "Chest", "Legs"};
         Random random = new Random();
         String randomWorkout = workouts[random.nextInt(workouts.length)];
 
-        // Set the text of the fxworkout label to the formatted date and the random workout
         fxworkout.setText(randomWorkout);
     }
 
