@@ -114,7 +114,7 @@
                                                 <Image url="@../../myndir/calander.png" />
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Calander">
+                                        <Button mnemonicParsing="false" onAction="#fxcalendar" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Calander">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>

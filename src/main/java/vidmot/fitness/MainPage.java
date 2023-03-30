@@ -81,6 +81,11 @@ public class MainPage implements Initializable {
         ViewSwitcher.switchTo(View.LOGIN);
     }
 
+    //calendar takki
+    public void fxcalendar(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.CALANDER);
+    }
+
     public String breytavatn() {
         double waters = (Double.parseDouble(fxwater.getText()) / 2) * 100;
         int water = (int) waters;
