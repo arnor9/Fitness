@@ -32,8 +32,6 @@ public class Muscles {
     private Button legExtension;
     @FXML
     private Button legPress;
-    @FXML
-    private AnchorPane rootPane;
 
     @FXML
     public void initialize() {
