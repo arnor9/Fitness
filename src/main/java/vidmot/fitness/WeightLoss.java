@@ -7,11 +7,7 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 
-import java.awt.*;
-import java.io.IOException;
 import java.math.BigDecimal;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -47,6 +43,7 @@ public class WeightLoss implements Initializable {
     public void initialize(URL location, ResourceBundle resource) {
         fxweightlabel.setText(data.getWeightbutton());
         myProgressBar.setStyle("-fx-accent: #00FF00;");
+        fxUsername.setText(data.getUsername());
     }
 
     public void fxback(ActionEvent actionEvent) {
@@ -58,23 +55,5 @@ public class WeightLoss implements Initializable {
         ViewSwitcher.switchTo(View.MAIN);
     }
 
-    //online store takki
-    @FXML
-    private void OnlineStore(ActionEvent event) {
-        try {
-            Desktop.getDesktop().browse(new URI("https://mettasport.is"));
-        } catch (IOException | URISyntaxException e) {
-
-        }
-    }
-
-    //Feedback takki
-    @FXML
-    private void Feedback(ActionEvent event) {
-        try {
-            Desktop.getDesktop().mail(new URI("mailto:feedback@fitgo.com?subject=Feedback%20on%20my%20app"));
-        } catch (IOException | URISyntaxException e) {
-        }
-    }
 
 }
