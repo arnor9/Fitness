@@ -61,9 +61,6 @@ public class MainPage implements Initializable {
     @FXML
     public Label fxUsername;
 
-    @FXML
-    private Button fxweightbutton;
-
 
     Data data = Data.getInstance();
 
@@ -72,7 +69,7 @@ public class MainPage implements Initializable {
     }
 
     public void fxweightloss(ActionEvent actionEvent) {
-        data.setWeightbutton(fxweightbutton.getLabel());
+        data.setWeightbutton("Weightloss");
         ViewSwitcher.switchTo(View.WEIGHTLOSS);
     }
 
