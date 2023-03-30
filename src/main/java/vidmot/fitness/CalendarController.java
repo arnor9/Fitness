@@ -81,4 +81,16 @@ public class CalendarController {
         }
     }
 
+    @FXML
+    void fxdashboard(ActionEvent event) {
+        ViewSwitcher.switchTo(View.MAIN);
+    }
+
+    public void fxtilbaka(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.LOGIN);
+    }
+
+    public void fxtilbaka2(ActionEvent event) {
+        ViewSwitcher.switchTo(View.MAIN);
+    }
 }
