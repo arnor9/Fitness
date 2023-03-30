@@ -4,7 +4,7 @@ public class EnergyWalkController {
 
 
     //spila hljoð þegar ytt er a audio icon (virkar ekki)
-    // @FXML
+    //g @FXML
     // private ImageView audioImage1;
 
 
