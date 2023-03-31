@@ -86,11 +86,11 @@ public class CalendarController {
         ViewSwitcher.switchTo(View.MAIN);
     }
 
-    public void fxtilbaka(ActionEvent actionEvent) {
-        ViewSwitcher.switchTo(View.LOGIN);
+    public void fxtilbaka4(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.MAIN);
     }
 
-    public void fxback3(ActionEvent event) {
-        ViewSwitcher.switchTo(View.MAIN);
+    public void fxtilbaka(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.LOGIN);
     }
 }

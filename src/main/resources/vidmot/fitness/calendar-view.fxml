@@ -194,7 +194,7 @@
                                     <Image url="@../../myndir/icons8-back-arrow-50.png" />
                                  </image>
                               </ImageView>
-                              <Button mnemonicParsing="false" onAction="#fxtilbaka2" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Back">
+                              <Button mnemonicParsing="false" onAction="#fxtilbaka4" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Back">
                                  <font>
                                     <Font name="Krungthep" size="11.0" />
                                  </font>
