@@ -90,7 +90,7 @@ public class CalendarController {
         ViewSwitcher.switchTo(View.LOGIN);
     }
 
-    public void fxtilbaka2(ActionEvent event) {
+    public void fxback3(ActionEvent event) {
         ViewSwitcher.switchTo(View.MAIN);
     }
 }

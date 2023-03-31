@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
 <ScrollPane prefHeight="935.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="vidmot.fitness.EnergyWalkController">
+            fx:controller="vidmot.fitness.YogaController">
     <content>
         <AnchorPane prefHeight="886.0" prefWidth="765.0" style="-fx-background-color: white;">
             <children>
-                <Button layoutX="691.0" layoutY="339.0" mnemonicParsing="false" onAction="#fxback" text="tilbaka"/>
+                <Button layoutX="691.0" layoutY="339.0" mnemonicParsing="false" onAction="#goBack" text="tilbaka"/>
                 <Label layoutX="52.0" layoutY="325.0" prefHeight="57.0" prefWidth="91.0" text="STRETCHING">
                     <font>
                         <Font name="System Bold" size="13.0"/>
