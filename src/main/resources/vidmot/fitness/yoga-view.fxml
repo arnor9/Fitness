@@ -6,21 +6,21 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
-
-<VBox prefHeight="715.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.YogaController">
+<VBox prefHeight="715.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="vidmot.fitness.YogaController">
     <children>
         <ScrollPane fitToHeight="true" fitToWidth="true">
             <content>
                 <ImageView fitHeight="1002.0" fitWidth="759.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../myndir/yogaexercise.jpg" />
+                        <Image url="@../../myndir/yogaexercise.jpg"/>
                     </image>
                     <VBox.margin>
-                        <Insets left="110.0" />
+                        <Insets left="110.0"/>
                     </VBox.margin>
                 </ImageView>
             </content>
         </ScrollPane>
-        <Button mnemonicParsing="false" onAction="#goBack" text="Back" />
+        <Button mnemonicParsing="false" onAction="#goBack" text="Back"/>
     </children>
 </VBox>

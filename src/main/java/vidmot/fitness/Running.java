@@ -57,8 +57,20 @@ public class Running implements Initializable {
     }
 
 
-    public void fxback(ActionEvent actionEvent) {
+    @FXML
+    void fxdashboard(ActionEvent event) {
         ViewSwitcher.switchTo(View.MAIN);
     }
 
+    public void fxtilbaka(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.MAIN);
+    }
+
+    public void fxback3(ActionEvent event) {
+        ViewSwitcher.switchTo(View.MAIN);
+    }
+
+    public void fxback(ActionEvent event) {
+        ViewSwitcher.switchTo(View.RUNNING);
+    }
 }

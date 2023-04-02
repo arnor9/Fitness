@@ -79,9 +79,9 @@ public class Muscles {
         popup.show();
     }
 
-    public void fxback(ActionEvent actionEvent) {
+
+    public void fxback2(ActionEvent event) {
         ViewSwitcher.switchTo(View.MAIN);
     }
-
 }
 
