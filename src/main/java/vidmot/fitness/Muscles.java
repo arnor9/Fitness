@@ -32,6 +32,13 @@ public class Muscles {
     private Button legExtension;
     @FXML
     private Button legPress;
+    @FXML
+    private Label fxUsername;
+    @FXML
+    private Label fxmusclelabel;
+
+    Data data = Data.getInstance();
+
 
     @FXML
     public void initialize() {
@@ -46,6 +53,8 @@ public class Muscles {
         squat.setOnAction(event -> showPopup("The squat is a compound exercise that targets the lower body, primarily the quads, hamstrings, and glutes. It also engages the core and lower back muscles for stability and support."));
         legExtension.setOnAction(event -> showPopup("Leg extensions are an isolation exercise that targets the quadriceps. This exercise can be done with a machine and allows for a greater focus on the quads."));
         legPress.setOnAction(event -> showPopup("The leg press is a compound exercise that targets the lower body, primarily the quads, hamstrings, and glutes. This exercise can be done with a machine and allows for a greater focus on the legs while providing support for the back."));
+        fxUsername.setText(data.getUsername());
+        fxmusclelabel.setText(data.getWeightbutton());
     }
 
     private void showPopup(String text) {

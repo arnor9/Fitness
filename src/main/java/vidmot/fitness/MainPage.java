@@ -13,6 +13,10 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.awt.*;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -61,6 +65,8 @@ public class MainPage implements Initializable {
     Data data = Data.getInstance();
 
     public void fxmuscles(ActionEvent actionEvent) {
+        data.setWeightbutton("Muscle Club");
+        data.setUsername(fxUsername.getText());
         ViewSwitcher.switchTo(View.MUSCLES);
     }
 
@@ -76,6 +82,11 @@ public class MainPage implements Initializable {
 
     public void fxback(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.LOGIN);
+    }
+
+    //calendar takki
+    public void fxcalendar(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.CALANDER);
     }
 
     public String breytavatn() {
@@ -165,6 +176,24 @@ public class MainPage implements Initializable {
             } else {
                 S2.setText("Obese");
             }
+        }
+    }
+
+    @FXML
+    private void OnlineStore(ActionEvent event) {
+        try {
+            Desktop.getDesktop().browse(new URI("https://mettasport.is"));
+        } catch (IOException | URISyntaxException e) {
+
+        }
+    }
+
+    //Feedback takki
+    @FXML
+    private void Feedback(ActionEvent event) {
+        try {
+            Desktop.getDesktop().mail(new URI("mailto:feedback@fitgo.com?subject=Feedback%20on%20my%20app"));
+        } catch (IOException | URISyntaxException e) {
         }
     }
 

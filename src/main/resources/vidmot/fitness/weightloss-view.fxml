@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <ScrollPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.WeightLoss">
@@ -191,48 +192,201 @@
             <center>
                 <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                     <children>
-                        <HBox prefHeight="500.0" prefWidth="200.0" spacing="20.0">
+                        <HBox prefHeight="500.0" prefWidth="787.0" spacing="20.0" styleClass="container" stylesheets="@../../styles.css">
                             <children>
-                        <VBox maxHeight="503.0" minHeight="180.0" prefHeight="500.0" prefWidth="135.0" styleClass="container" stylesheets="@../../styles.css">
+                                <Label styleClass="shadow" stylesheets="@../../styles.css" text="Program">
+                                    <font>
+                                        <Font name="Krungthep" size="18.0" />
+                                    </font>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                                </Label>
+                        <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="653.0">
                            <children>
-                              <HBox prefHeight="33.0" prefWidth="112.0">
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0">
                                  <children>
-                                            <Label styleClass="shadow" stylesheets="@../../styles.css" text="Program">
-                                                <font>
-                                                    <Font name="Krungthep" size="18.0" />
-                                                </font>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Monday" textFill="WHITE" />
+                                       </children>
                                        <HBox.margin>
-                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                          <Insets />
                                        </HBox.margin>
-                                            </Label>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #f9ddb1; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Cardio" />
+                                       </children>
+                                    </HBox>
+                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
+                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                       <children>
+                                          <Label text="15'" />
+                                       </children>
+                                    </HBox>
                                  </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="60.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0">
+                                 <children>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Tuesday" textFill="WHITE" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #f9ddb1; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Cardio" />
+                                       </children>
+                                    </HBox>
+                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
+                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                       <children>
+                                          <Label text="15'" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0">
+                                 <children>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Wednesday" textFill="WHITE" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #f9ddb1; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Rest" />
+                                       </children>
+                                    </HBox>
+                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
+                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                       <children>
+                                          <Label />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0">
+                                 <children>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Thursday" textFill="WHITE" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #f9ddb1; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Cardio" />
+                                       </children>
+                                    </HBox>
+                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
+                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                       <children>
+                                          <Label text="15'" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0">
+                                 <children>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Friday" textFill="WHITE" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #f9ddb1; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Cardio" />
+                                       </children>
+                                    </HBox>
+                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
+                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                       <children>
+                                          <Label text="15'" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0">
+                                 <children>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Saturday" textFill="WHITE" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #f9ddb1; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Cardio" />
+                                       </children>
+                                    </HBox>
+                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
+                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                       <children>
+                                          <Label text="15'" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0">
+                                 <children>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Sunday" textFill="WHITE" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #f9ddb1; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Rest" />
+                                       </children>
+                                    </HBox>
+                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
+                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                       <children>
+                                          <Label />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
                               </HBox>
                            </children>
-                        </VBox>
-                        <VBox prefHeight="200.0" prefWidth="135.0" styleClass="container" stylesheets="@../../styles.css">
-                           <HBox.margin>
-                              <Insets left="-10.0" />
-                           </HBox.margin>
-                        </VBox>
-                        <VBox prefHeight="200.0" prefWidth="135.0" styleClass="container" stylesheets="@../../styles.css">
-                           <HBox.margin>
-                              <Insets left="-10.0" />
-                           </HBox.margin>
-                        </VBox>
-                        <VBox prefHeight="200.0" prefWidth="135.0" styleClass="container" stylesheets="@../../styles.css">
-                           <HBox.margin>
-                              <Insets left="-10.0" />
-                           </HBox.margin>
-                        </VBox>
-                        <VBox prefHeight="200.0" prefWidth="135.0" styleClass="container" stylesheets="@../../styles.css">
-                           <HBox.margin>
-                              <Insets left="-10.0" />
-                           </HBox.margin>
-                        </VBox>
-                        <VBox prefHeight="200.0" prefWidth="135.0" styleClass="container" stylesheets="@../../styles.css">
-                           <HBox.margin>
-                              <Insets left="-10.0" />
-                           </HBox.margin>
                         </VBox>
                             </children>
                             <VBox.margin>
@@ -258,7 +412,7 @@
                                             <children>
                                                 <HBox alignment="CENTER" prefHeight="41.0" prefWidth="435.0">
                                                     <children>
-                                                        <Label fx:id="myprogresslabel" text="Label">
+                                                        <Label fx:id="myprogresslabel" text="0%">
                                              <font>
                                                 <Font name="Krungthep" size="24.0" />
                                              </font></Label>
@@ -281,7 +435,7 @@
                                                         </CheckBox>
                                                         <CheckBox mnemonicParsing="false" text="Tuesday">
                                                             <HBox.margin>
-                                                                <Insets left="60.0" />
+                                                                <Insets bottom="10.0" left="60.0" />
                                                             </HBox.margin>
                                                         </CheckBox>
                                                     </children>
@@ -302,6 +456,9 @@
                                                             </HBox.margin>
                                                         </CheckBox>
                                                     </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
                                                 </HBox>
                                                 <HBox prefHeight="33.0" prefWidth="435.0">
                                                     <children>
