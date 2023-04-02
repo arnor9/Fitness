@@ -24,4 +24,6 @@ public class LoginController {
         ViewSwitcher.switchTo(View.MAIN);
     }
 
+    // #35530a
+
 }
