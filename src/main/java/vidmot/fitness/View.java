@@ -13,7 +13,9 @@ public enum View {
     RUN("run-view.fxml"),
     SPINNING("spinning-view.fxml"),
     CALANDER("calendar-view.fxml"),
-    BROS("gymBros-view.fxml");
+    BROS("gymBros-view.fxml"),
+    RECIPES("recipes-view.fxml");
+
 
     private String fileName;
 

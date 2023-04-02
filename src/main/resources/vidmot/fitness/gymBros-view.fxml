@@ -110,10 +110,10 @@
                                             </font>
                                         </Button>
                                     </children>
-                           <styleClass>
-                              <String fx:value="button-container-mouse-moved" />
-                              <String fx:value="selected-button-container" />
-                           </styleClass>
+                                    <styleClass>
+                                        <String fx:value="button-container-mouse-moved" />
+                                        <String fx:value="selected-button-container" />
+                                    </styleClass>
                                 </HBox>
                                 <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
                                     <children>
@@ -190,168 +190,183 @@
                     </children>
                 </VBox>
             </left>
-         <center>
-            <VBox prefHeight="500.0" prefWidth="880.0" BorderPane.alignment="CENTER">
-               <BorderPane.margin>
-                  <Insets bottom="10.0" right="10.0" top="10.0" />
-               </BorderPane.margin>
-               <children>
-                  <Label styleClass="shadow" stylesheets="@../../styles.css" text="Share your goals and victories">
-                     <font>
-                        <Font name="Krungthep" size="18.0" />
-                     </font>
-                     <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                     </VBox.margin>
-                  </Label>
-                  <VBox alignment="TOP_CENTER" maxWidth="486.0" prefHeight="143.0" prefWidth="486.0" styleClass="container" stylesheets="@../../styles.css">
-                     <VBox.margin>
-                        <Insets left="40.0" top="40.0" />
-                     </VBox.margin>
-                     <children>
-                        <Label styleClass="shadow" stylesheets="@../../styles.css" text="Karen">
-                           <VBox.margin>
-                              <Insets bottom="5.0" top="5.0" />
-                           </VBox.margin>
-                           <font>
-                              <Font name="Krungthep" size="14.0" />
-                           </font>
+            <center>
+                <VBox prefHeight="500.0" prefWidth="880.0" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                    </BorderPane.margin>
+                    <children>
+                        <Label styleClass="shadow" stylesheets="@../../styles.css" text="Share your goals and victories">
+                            <font>
+                                <Font name="Krungthep" size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" />
+                            </VBox.margin>
                         </Label>
-                        <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
-                        <HBox prefHeight="170.0" prefWidth="486.0">
-                           <VBox.margin>
-                              <Insets top="10.0" />
-                           </VBox.margin>
-                           <children>
-                              <Label text="Label" />
-                           </children>
+                        <VBox alignment="TOP_CENTER" maxWidth="486.0" prefHeight="143.0" prefWidth="486.0" styleClass="container" stylesheets="@../../styles.css">
+                            <VBox.margin>
+                                <Insets left="40.0" top="40.0" />
+                            </VBox.margin>
+                            <children>
+                                <Label styleClass="shadow" stylesheets="@../../styles.css" text="Karen">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" top="5.0" />
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="Krungthep" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
+                                <HBox prefHeight="170.0" prefWidth="486.0">
+                                    <VBox.margin>
+                                        <Insets top="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label text="Label" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <HBox alignment="TOP_RIGHT" prefHeight="143.0" prefWidth="880.0">
+                            <children>
+                                <VBox alignment="TOP_CENTER" maxHeight="200.0" maxWidth="486.0" prefHeight="125.0" prefWidth="486.0" styleClass="container" stylesheets="@../../styles.css">
+                                    <children>
+                                        <Label styleClass="shadow" stylesheets="@../../styles.css" text="Martin">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="Krungthep" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
+                                        <HBox prefHeight="141.0" prefWidth="486.0">
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                            <children>
+                                                <Label text="Label" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets right="10.0" />
+                                    </HBox.margin>
+                                </VBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
                         </HBox>
-                     </children>
-                  </VBox>
-                  <HBox alignment="TOP_RIGHT" prefHeight="143.0" prefWidth="880.0">
-                     <children>
-                        <VBox alignment="TOP_CENTER" maxHeight="200.0" maxWidth="486.0" prefHeight="125.0" prefWidth="486.0" styleClass="container" stylesheets="@../../styles.css">
-                           <children>
-                              <Label styleClass="shadow" stylesheets="@../../styles.css" text="Martin">
-                                 <VBox.margin>
-                                    <Insets bottom="5.0" top="5.0" />
-                                 </VBox.margin>
-                                 <font>
-                                    <Font name="Krungthep" size="14.0" />
-                                 </font>
-                              </Label>
-                              <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
-                              <HBox prefHeight="141.0" prefWidth="486.0">
-                                 <VBox.margin>
-                                    <Insets top="10.0" />
-                                 </VBox.margin>
-                                 <children>
-                                    <Label text="Label" />
-                                 </children>
-                              </HBox>
-                           </children>
-                           <HBox.margin>
-                              <Insets right="10.0" />
-                           </HBox.margin>
-                        </VBox>
-                     </children>
-                     <VBox.margin>
-                        <Insets top="30.0" />
-                     </VBox.margin>
-                  </HBox>
-                  <HBox prefHeight="143.0" prefWidth="880.0">
-                     <children>
-                        <VBox alignment="TOP_CENTER" maxWidth="486.0" prefHeight="200.0" prefWidth="486.0" styleClass="container" stylesheets="@../../styles.css">
-                           <children>
-                              <Label styleClass="shadow" stylesheets="@../../styles.css" text="Stefan">
-                                 <VBox.margin>
-                                    <Insets bottom="5.0" top="5.0" />
-                                 </VBox.margin>
-                                 <font>
-                                    <Font name="Krungthep" size="14.0" />
-                                 </font>
-                              </Label>
-                              <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
-                              <HBox prefHeight="170.0" prefWidth="486.0">
-                                 <VBox.margin>
-                                    <Insets top="10.0" />
-                                 </VBox.margin>
-                                 <children>
-                                    <Label text="Label" />
-                                 </children>
-                              </HBox>
-                           </children>
-                           <HBox.margin>
-                              <Insets left="40.0" />
-                           </HBox.margin>
-                        </VBox>
-                     </children>
-                     <VBox.margin>
-                        <Insets top="30.0" />
-                     </VBox.margin>
-                  </HBox>
-                  <HBox alignment="TOP_RIGHT" prefHeight="143.0" prefWidth="880.0">
-                     <VBox.margin>
-                        <Insets top="30.0" />
-                     </VBox.margin>
-                     <children>
-                        <VBox alignment="TOP_CENTER" maxWidth="486.0" prefHeight="200.0" prefWidth="486.0" styleClass="container" stylesheets="@../../styles.css">
-                           <children>
-                              <Label styleClass="shadow" stylesheets="@../../styles.css" text="Susan">
-                                 <VBox.margin>
-                                    <Insets bottom="5.0" top="5.0" />
-                                 </VBox.margin>
-                                 <font>
-                                    <Font name="Krungthep" size="14.0" />
-                                 </font>
-                              </Label>
-                              <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
-                              <HBox prefHeight="170.0" prefWidth="486.0">
-                                 <VBox.margin>
-                                    <Insets top="10.0" />
-                                 </VBox.margin>
-                                 <children>
-                                    <Label text="Label" />
-                                 </children>
-                              </HBox>
-                           </children>
-                           <HBox.margin>
-                              <Insets right="10.0" />
-                           </HBox.margin>
-                        </VBox>
-                     </children>
-                  </HBox>
-                  <HBox prefHeight="143.0" prefWidth="880.0">
-                     <VBox.margin>
-                        <Insets top="30.0" />
-                     </VBox.margin>
-                     <children>
-                        <VBox alignment="TOP_CENTER" maxWidth="486.0" prefHeight="200.0" prefWidth="486.0" styleClass="container" stylesheets="@../../styles.css">
-                           <children>
-                              <Label styleClass="shadow" stylesheets="@../../styles.css" text="Antony">
-                                 <VBox.margin>
-                                    <Insets bottom="5.0" top="5.0" />
-                                 </VBox.margin>
-                                 <font>
-                                    <Font name="Krungthep" size="14.0" />
-                                 </font>
-                              </Label>
-                              <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
-                              <HBox prefHeight="100.0" prefWidth="200.0">
-                                 <children>
-                                    <Label text="Label" />
-                                 </children>
-                              </HBox>
-                           </children>
-                           <HBox.margin>
-                              <Insets left="40.0" />
-                           </HBox.margin>
-                        </VBox>
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
-         </center>
+                        <HBox prefHeight="143.0" prefWidth="880.0">
+                            <children>
+                                <VBox alignment="TOP_CENTER" maxWidth="486.0" prefHeight="200.0" prefWidth="486.0" styleClass="container" stylesheets="@../../styles.css">
+                                    <children>
+                                        <Label styleClass="shadow" stylesheets="@../../styles.css" text="Stefan">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="Krungthep" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
+                                        <HBox prefHeight="170.0" prefWidth="486.0">
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                            <children>
+                                                <Label text="Label" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets left="40.0" />
+                                    </HBox.margin>
+                                </VBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" prefHeight="143.0" prefWidth="880.0">
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
+                            <children>
+                                <VBox alignment="TOP_CENTER" maxWidth="486.0" prefHeight="200.0" prefWidth="486.0" styleClass="container" stylesheets="@../../styles.css">
+                                    <children>
+                                        <Label styleClass="shadow" stylesheets="@../../styles.css" text="Susan">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="Krungthep" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
+                                        <HBox prefHeight="170.0" prefWidth="486.0">
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                            <children>
+                                                <Label text="Label" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets right="10.0" />
+                                    </HBox.margin>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="143.0" prefWidth="880.0">
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
+                            <children>
+                                <VBox alignment="TOP_CENTER" maxWidth="486.0" prefHeight="200.0" prefWidth="486.0" styleClass="container" stylesheets="@../../styles.css">
+                                    <children>
+                                        <Label styleClass="shadow" stylesheets="@../../styles.css" text="Antony">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="Krungthep" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Label text="Label" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets left="40.0" />
+                                    </HBox.margin>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </center>
+            <top>
+                <HBox alignment="CENTER" prefHeight="61.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="fxweightlabel" alignment="CENTER" prefHeight="60.0" prefWidth="214.0" styleClass="shadow" stylesheets="@../../styles.css" text="ADMIN DASHBOARD">
+                            <font>
+                                <Font name="Krungthep" size="18.0" />
+                            </font>
+                        </Label>
+                        <Pane maxHeight="1.0" prefHeight="1.0" prefWidth="200.0" styleClass="line-color" stylesheets="@../../styles.css" HBox.hgrow="ALWAYS" />
+                    </children>
+                    <BorderPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                    </BorderPane.margin>
+                </HBox>
+            </top>
         </BorderPane>
 
     </content>

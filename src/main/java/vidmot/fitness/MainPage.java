@@ -90,6 +90,11 @@ public class MainPage implements Initializable {
     }
 
     @FXML
+    void fxrecipes(ActionEvent event) {
+        ViewSwitcher.switchTo(View.RECIPES);
+    }
+
+    @FXML
     void fxbros(ActionEvent event) {
         ViewSwitcher.switchTo(View.BROS);
     }
