@@ -128,7 +128,7 @@
                                                 <Image url="@../../myndir/society.png" />
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Gym Bro's">
+                                        <Button mnemonicParsing="false" onAction="#fxbros" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Gym Bro's">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>
@@ -352,7 +352,7 @@
                                     <children>
                                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" HBox.hgrow="ALWAYS">
                                             <children>
-                                                <Button mnemonicParsing="false" onAction="#fxmuscles" prefHeight="26.0" prefWidth="209.0" style="-fx-background-color: transparent;" stylesheets="@../../styles.css" text="Add muscles">
+                                                <Button mnemonicParsing="false" onAction="#fxmuscles" prefHeight="26.0" prefWidth="209.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 5;" stylesheets="@../../styles.css" text="Add muscles">
                                                     <font>
                                                         <Font name="Krungthep" size="14.0" />
                                                     </font>
@@ -366,7 +366,7 @@
                                         <Pane maxHeight="100.0" maxWidth="1.0" minWidth="1.0" prefHeight="87.0" prefWidth="4.0" styleClass="line-color" stylesheets="@../../styles.css" />
                                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" HBox.hgrow="ALWAYS">
                                             <children>
-                                                <Button mnemonicParsing="false" onAction="#fxweightloss" prefHeight="26.0" prefWidth="208.0" style="-fx-background-color: transparent;" stylesheets="@../../styles.css" text="Lose weight">
+                                                <Button mnemonicParsing="false" onAction="#fxweightloss" prefHeight="26.0" prefWidth="208.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 5;" stylesheets="@../../styles.css" text="Lose weight">
 
                                                     <font>
                                                         <Font name="Krungthep" size="14.0" />
@@ -381,7 +381,7 @@
                                         <Pane maxHeight="100.0" maxWidth="1.0" minWidth="1.0" prefHeight="100.0" prefWidth="1.0" styleClass="line-color" stylesheets="@../../styles.css" />
                                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" HBox.hgrow="ALWAYS">
                                             <children>
-                                                <Button mnemonicParsing="false" onAction="#fxrunning" prefHeight="26.0" prefWidth="210.0" style="-fx-background-color: transparent;" stylesheets="@../../styles.css" text="Run program">
+                                                <Button mnemonicParsing="false" onAction="#fxrunning" prefHeight="26.0" prefWidth="210.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 5;" stylesheets="@../../styles.css" text="Run program">
                                                     <font>
                                                         <Font name="Krungthep" size="14.0" />
                                                     </font>

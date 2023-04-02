@@ -12,7 +12,8 @@ public enum View {
     WARMUP("warmup-view.fxml"),
     RUN("run-view.fxml"),
     SPINNING("spinning-view.fxml"),
-    CALANDER("calendar-view.fxml");
+    CALANDER("calendar-view.fxml"),
+    BROS("gymBros-view.fxml");
 
     private String fileName;
 

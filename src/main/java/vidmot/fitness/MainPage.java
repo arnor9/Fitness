@@ -89,6 +89,11 @@ public class MainPage implements Initializable {
         ViewSwitcher.switchTo(View.CALANDER);
     }
 
+    @FXML
+    void fxbros(ActionEvent event) {
+        ViewSwitcher.switchTo(View.BROS);
+    }
+
     public String breytavatn() {
         double waters = (Double.parseDouble(fxwater.getText()) / 2) * 100;
         int water = (int) waters;
