@@ -14,7 +14,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="780.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.LoginController">
     <right>
-        <VBox prefWidth="332.0" BorderPane.alignment="CENTER">
+        <VBox prefWidth="332.0" styleClass="gradient-background" stylesheets="@../../styles.css" BorderPane.alignment="CENTER">
             <children>
                 <HBox alignment="CENTER" prefHeight="297.0" prefWidth="332.0">
                     <children>

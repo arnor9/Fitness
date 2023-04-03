@@ -198,22 +198,22 @@
                         <Insets left="20.0" right="10.0" top="10.0" />
                     </VBox.margin>
                 </Label>
-                <HBox prefHeight="240.0" prefWidth="870.0" styleClass="container" stylesheets="@../../styles.css">
+                <HBox alignment="TOP_CENTER" prefHeight="240.0" prefWidth="870.0" styleClass="container" stylesheets="@../../styles.css">
                     <VBox.margin>
                         <Insets left="10.0" right="10.0" top="20.0" />
                     </VBox.margin>
-                    <children>
-                        <Label styleClass="shadow" stylesheets="@../../styles.css" text="Breakfast">
-                            <font>
-                                <Font name="Krungthep" size="18.0" />
-                            </font>
-                            <HBox.margin>
-                                <Insets left="10.0" right="10.0" top="10.0" />
-                            </HBox.margin>
-                        </Label>
-                    </children>
+               <children>
+                  <Label styleClass="shadow" stylesheets="@../../styles.css" text="Breakfast">
+                     <font>
+                        <Font name="Krungthep" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
                 </HBox>
-                <HBox prefHeight="240.0" prefWidth="870.0" styleClass="container" stylesheets="@../../styles.css">
+                <HBox alignment="TOP_CENTER" prefHeight="240.0" prefWidth="870.0" styleClass="container" stylesheets="@../../styles.css">
                     <VBox.margin>
                         <Insets left="10.0" right="10.0" top="20.0" />
                     </VBox.margin>
@@ -228,7 +228,7 @@
                         </Label>
                     </children>
                 </HBox>
-                <HBox prefHeight="240.0" prefWidth="870.0" styleClass="container" stylesheets="@../../styles.css">
+                <HBox alignment="TOP_CENTER" prefHeight="240.0" prefWidth="870.0" styleClass="container" stylesheets="@../../styles.css">
                     <children>
                         <Label styleClass="shadow" stylesheets="@../../styles.css" text="Dinner">
                             <font>

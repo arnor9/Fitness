@@ -218,14 +218,45 @@
                                     </font>
                                 </Label>
                                 <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
-                                <HBox prefHeight="170.0" prefWidth="486.0">
+                                <HBox prefHeight="18.0" prefWidth="486.0">
                                     <VBox.margin>
                                         <Insets top="10.0" />
                                     </VBox.margin>
-                                    <children>
-                                        <Label text="Label" />
-                                    </children>
+                           <children>
+                                        <Label text="Hi, my name is Karen and my goal is to loose weight. ">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
                                 </HBox>
+                        <HBox prefHeight="15.0" prefWidth="486.0">
+                           <children>
+                              <Label text="I am currently at 90 kg and I want to go down to 70 kg. ">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="20.0" prefWidth="486.0">
+                           <children>
+                              <Label text="I am going to follow the recipes that FitGo recommend and follow the ">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="weight lose program to meet my goals!">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
                             </children>
                         </VBox>
                         <HBox alignment="TOP_RIGHT" prefHeight="143.0" prefWidth="880.0">
@@ -241,14 +272,44 @@
                                             </font>
                                         </Label>
                                         <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
-                                        <HBox prefHeight="141.0" prefWidth="486.0">
+                                        <HBox prefHeight="15.0" prefWidth="486.0">
                                             <VBox.margin>
                                                 <Insets top="10.0" />
                                             </VBox.margin>
                                             <children>
-                                                <Label text="Label" />
+                                                <Label>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin></Label>
+                                    <Label text="I just hit my PR today!!!!" />
                                             </children>
                                         </HBox>
+                              <HBox prefHeight="5.0" prefWidth="486.0">
+                                 <children>
+                                    <Label text="Finally after 3 months of hard work I benched 120 kg... Letsgo BABY!!">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="10.0" prefWidth="486.0">
+                                 <children>
+                                    <Label text="#PR&amp;Pizza">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="153 likes     37 comments" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </HBox>
                                     </children>
                                     <HBox.margin>
                                         <Insets right="10.0" />
@@ -272,14 +333,43 @@
                                             </font>
                                         </Label>
                                         <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
-                                        <HBox prefHeight="170.0" prefWidth="486.0">
+                                        <HBox prefHeight="17.0" prefWidth="486.0">
                                             <VBox.margin>
                                                 <Insets top="10.0" />
                                             </VBox.margin>
                                             <children>
-                                                <Label text="Label" />
+                                                <Label text="Okey lets do this... I just signed up for the marathon in Berlin this summer.">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin></Label>
                                             </children>
                                         </HBox>
+                              <HBox prefHeight="13.0" prefWidth="486.0">
+                                 <children>
+                                    <Label text="Running program from FitGo will come handy hehe">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="9.0" prefWidth="486.0">
+                                 <children>
+                                    <Label text="#BerlinhereIcome        #Running">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="30 likes     10 comments" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </HBox>
                                     </children>
                                     <HBox.margin>
                                         <Insets left="40.0" />
@@ -306,14 +396,38 @@
                                             </font>
                                         </Label>
                                         <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
-                                        <HBox prefHeight="170.0" prefWidth="486.0">
+                                        <HBox prefHeight="2.0" prefWidth="486.0">
                                             <VBox.margin>
                                                 <Insets top="10.0" />
                                             </VBox.margin>
                                             <children>
-                                                <Label text="Label" />
+                                                <Label text="OMG! I love these recipes FitGo have to offer! ">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin></Label>
                                             </children>
                                         </HBox>
+                              <HBox prefHeight="2.0" prefWidth="486.0">
+                                 <children>
+                                    <Label text="Have been trying it out and it is delicious!!">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="7 likes     13 comments">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </HBox>
                                     </children>
                                     <HBox.margin>
                                         <Insets right="10.0" />
@@ -337,11 +451,43 @@
                                             </font>
                                         </Label>
                                         <Pane maxHeight="1.0" maxWidth="-Infinity" minHeight="1.0" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css" />
-                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                        <HBox prefHeight="13.0" prefWidth="486.0">
                                             <children>
-                                                <Label text="Label" />
+                                                <Label text="Hi, my name is Antony and my goal is fit for summer">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin></Label>
                                             </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
                                         </HBox>
+                              <HBox prefHeight="4.0" prefWidth="486.0">
+                                 <children>
+                                    <Label text="I'm tierd of being insecure with my body :(">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="15.0" prefWidth="486.0">
+                                 <children>
+                                    <Label text="But this summer is going to be different.. FitGo lets do this!!  #fitforsummer">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="37 likes     5 comments" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </HBox>
                                     </children>
                                     <HBox.margin>
                                         <Insets left="40.0" />
