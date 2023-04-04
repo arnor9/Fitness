@@ -138,5 +138,37 @@ public class Muscles {
             e.printStackTrace();
         }
     }
+
+    //calendar takki
+    public void fxcalendar(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.CALANDER);
+    }
+
+    @FXML
+    void fxbros(ActionEvent event) {
+        ViewSwitcher.switchTo(View.BROS);
+    }
+
+    @FXML
+    private void OnlineStore(ActionEvent event) {
+        try {
+            Desktop.getDesktop().browse(new URI("https://mettasport.is"));
+        } catch (IOException | URISyntaxException e) {
+
+        }
+    }
+
+    //Feedback takki
+    @FXML
+    private void Feedback(ActionEvent event) {
+        try {
+            Desktop.getDesktop().mail(new URI("mailto:feedback@fitgo.com?subject=Feedback%20on%20my%20app"));
+        } catch (IOException | URISyntaxException e) {
+        }
+    }
+
+    public void fxdashboard(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.MAIN);
+    }
 }
 
