@@ -73,4 +73,8 @@ public class Running implements Initializable {
     public void fxback(ActionEvent event) {
         ViewSwitcher.switchTo(View.RUNNING);
     }
+
+    public void fxbros(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.BROS);
+    }
 }

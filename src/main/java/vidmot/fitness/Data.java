@@ -7,6 +7,7 @@ public class Data {
     private String weight;
     private String height;
     private String weightbutton;
+    private String musclebutton;
 
     private Data() {
     }
@@ -31,6 +32,10 @@ public class Data {
         return weightbutton;
     }
 
+    public String getMusclebutton() {
+        return musclebutton;
+    }
+
     public void setUsername(String username) {
         this.username = username;
     }
@@ -45,5 +50,9 @@ public class Data {
 
     public void setWeightbutton(String weightbutton) {
         this.weightbutton = weightbutton;
+    }
+
+    public void setMusclebutton(String musclebutton) {
+        this.musclebutton = musclebutton;
     }
 }

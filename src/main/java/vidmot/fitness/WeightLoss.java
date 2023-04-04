@@ -2,7 +2,6 @@ package vidmot.fitness;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
@@ -12,10 +11,8 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
-public class WeightLoss implements Initializable {
+public class WeightLoss {
     @FXML
     private Label fxUsername;
 
@@ -44,8 +41,8 @@ public class WeightLoss implements Initializable {
         }
     }
 
-    public void initialize(URL location, ResourceBundle resource) {
-        fxweightlabel.setText(data.getWeightbutton());
+    public void initialize() {
+        fxweightlabel.setText("Weight loss club");
         myProgressBar.setStyle("-fx-accent: #00FF00;");
         fxUsername.setText(data.getUsername());
     }
@@ -79,4 +76,7 @@ public class WeightLoss implements Initializable {
     }
 
 
+    public void fxbros(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.BROS);
+    }
 }

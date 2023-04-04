@@ -54,7 +54,7 @@ public class Muscles {
         legExtension.setOnAction(event -> showPopup("Leg extensions are an isolation exercise that targets the quadriceps. This exercise can be done with a machine and allows for a greater focus on the quads."));
         legPress.setOnAction(event -> showPopup("The leg press is a compound exercise that targets the lower body, primarily the quads, hamstrings, and glutes. This exercise can be done with a machine and allows for a greater focus on the legs while providing support for the back."));
         fxUsername.setText(data.getUsername());
-        fxmusclelabel.setText(data.getWeightbutton());
+        fxmusclelabel.setText(data.getMusclebutton());
     }
 
     private void showPopup(String text) {

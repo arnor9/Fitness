@@ -65,7 +65,7 @@ public class MainPage implements Initializable {
     Data data = Data.getInstance();
 
     public void fxmuscles(ActionEvent actionEvent) {
-        data.setWeightbutton("Muscle Club");
+        data.setMusclebutton("Muscle Club");
         data.setUsername(fxUsername.getText());
         ViewSwitcher.switchTo(View.MUSCLES);
     }
@@ -206,6 +206,5 @@ public class MainPage implements Initializable {
         } catch (IOException | URISyntaxException e) {
         }
     }
-
-
+    
 }
