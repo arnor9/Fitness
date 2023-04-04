@@ -188,7 +188,40 @@ public class LocationViewController {
         ViewSwitcher.switchTo(View.BROS);
     }
 
+    //recipes
+
     public void fxrecipes(javafx.event.ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.RECIPES);
     }
+
+    @FXML
+    private void openWebsite() {
+        String url = "https://www.bonappetit.com/recipes/family-meals/slideshow/big-batch-recipes";
+        try {
+            Desktop.getDesktop().browse(new URI(url));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void openWebsite2() {
+        String url = "https://reciperunner.com";
+        try {
+            Desktop.getDesktop().browse(new URI(url));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void openWebsite3() {
+        String url = "https://www.bbcgoodfood.com/recipes/collection/healthy-recipes-for-weight-loss";
+        try {
+            Desktop.getDesktop().browse(new URI(url));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

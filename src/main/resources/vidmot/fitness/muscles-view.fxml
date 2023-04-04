@@ -1,196 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-
-<ScrollPane prefHeight="1118.0" prefWidth="1202.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.Muscles">
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<ScrollPane prefHeight="1118.0" prefWidth="1202.0" xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.Muscles">
     <content>
-        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1116.0" prefWidth="1200.0" styleClass="gradient-background" stylesheets="@../../styles.css">
+        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                    prefHeight="1116.0" prefWidth="1200.0" styleClass="gradient-background"
+                    stylesheets="@../../styles.css">
             <top>
-                <HBox alignment="CENTER" prefHeight="61.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+                <HBox alignment="CENTER" prefHeight="61.0" prefWidth="200.0" spacing="20.0"
+                      BorderPane.alignment="CENTER">
                     <children>
-                        <Label fx:id="fxmusclelabel" alignment="CENTER" prefHeight="60.0" prefWidth="214.0" styleClass="shadow" stylesheets="@../../styles.css">
+                        <Label fx:id="fxmusclelabel" alignment="CENTER" prefHeight="60.0" prefWidth="214.0"
+                               styleClass="shadow" stylesheets="@../../styles.css">
                             <font>
-                                <Font name="Krungthep" size="18.0" />
+                                <Font name="Krungthep" size="18.0"/>
                             </font>
                         </Label>
-                        <Pane maxHeight="1.0" prefHeight="1.0" prefWidth="200.0" styleClass="line-color" stylesheets="@../../styles.css" HBox.hgrow="ALWAYS" />
+                        <Pane maxHeight="1.0" prefHeight="1.0" prefWidth="200.0" styleClass="line-color"
+                              stylesheets="@../../styles.css" HBox.hgrow="ALWAYS"/>
                     </children>
                     <BorderPane.margin>
-                        <Insets left="20.0" right="20.0" />
+                        <Insets left="20.0" right="20.0"/>
                     </BorderPane.margin>
                 </HBox>
             </top>
             <left>
-                <VBox prefHeight="200.0" prefWidth="290.0" spacing="10.0" styleClass="container" stylesheets="@../../styles.css" BorderPane.alignment="TOP_CENTER">
+                <VBox prefHeight="200.0" prefWidth="290.0" spacing="10.0" styleClass="container"
+                      stylesheets="@../../styles.css" BorderPane.alignment="TOP_CENTER">
                     <BorderPane.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
                     </BorderPane.margin>
                     <children>
                         <HBox alignment="CENTER" prefHeight="91.0" prefWidth="290.0">
                             <children>
-                                <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true"
+                                           styleClass="shadow">
                                     <image>
-                                        <Image url="@../../myndir/user.png" />
+                                        <Image url="@../../myndir/user.png"/>
                                     </image>
                                 </ImageView>
                                 <VBox alignment="CENTER" prefHeight="91.0" prefWidth="182.0">
                                     <children>
-                                        <Label fx:id="fxUsername" alignment="CENTER" contentDisplay="CENTER" prefHeight="24.0" prefWidth="182.0" styleClass="shadow" stylesheets="@../../styles.css">
+                                        <Label fx:id="fxUsername" alignment="CENTER" contentDisplay="CENTER"
+                                               prefHeight="24.0" prefWidth="182.0" styleClass="shadow"
+                                               stylesheets="@../../styles.css">
                                             <font>
-                                                <Font name="Krungthep" size="18.0" />
+                                                <Font name="Krungthep" size="18.0"/>
                                             </font>
                                             <VBox.margin>
-                                                <Insets bottom="2.0" />
+                                                <Insets bottom="2.0"/>
                                             </VBox.margin>
                                         </Label>
                                         <Label styleClass="shadow" stylesheets="@../../styles.css" text="Athlete">
                                             <font>
-                                                <Font name="Krungthep" size="14.0" />
+                                                <Font name="Krungthep" size="14.0"/>
                                             </font>
                                         </Label>
                                     </children>
                                 </VBox>
                             </children>
                         </HBox>
-                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1.0" prefWidth="250.0" styleClass="line-color" stylesheets="@../../styles.css">
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1.0" prefWidth="250.0"
+                              styleClass="line-color" stylesheets="@../../styles.css">
                             <VBox.margin>
-                                <Insets left="20.0" />
+                                <Insets left="20.0"/>
                             </VBox.margin>
                         </Pane>
                         <VBox prefHeight="571.0" prefWidth="290.0" spacing="20.0">
                             <children>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
+                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
+                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
                                     <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
+                                                   preserveRatio="true" styleClass="shadow">
                                             <image>
-                                                <Image url="@../../myndir/home2.png" />
+                                                <Image url="@../../myndir/home2.png"/>
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Dashboaard">
+                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0"
+                                                style="-fx-background-color: transparent;" styleClass="shadow"
+                                                stylesheets="@../../styles.css" text="Dashboaard">
                                             <font>
-                                                <Font name="Krungthep" size="11.0" />
+                                                <Font name="Krungthep" size="11.0"/>
                                             </font>
                                         </Button>
                                     </children>
                                 </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
+                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
+                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
                                     <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
+                                                   preserveRatio="true" styleClass="shadow">
                                             <image>
-                                                <Image url="@../../myndir/locations.png" />
+                                                <Image url="@../../myndir/locations.png"/>
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" onAction="#fxlocation" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Gym location">
+                                        <Button mnemonicParsing="false" onAction="#fxlocation" prefHeight="26.0"
+                                                prefWidth="95.0" style="-fx-background-color: transparent;"
+                                                styleClass="shadow" stylesheets="@../../styles.css" text="Gym location">
                                             <font>
-                                                <Font name="Krungthep" size="11.0" />
+                                                <Font name="Krungthep" size="11.0"/>
                                             </font>
                                         </Button>
                                     </children>
                                 </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
+                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
+                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
                                     <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
+                                                   preserveRatio="true" styleClass="shadow">
                                             <image>
-                                                <Image url="@../../myndir/calander.png" />
+                                                <Image url="@../../myndir/calander.png"/>
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Calander">
+                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0"
+                                                style="-fx-background-color: transparent;" styleClass="shadow"
+                                                stylesheets="@../../styles.css" text="Calander">
                                             <font>
-                                                <Font name="Krungthep" size="11.0" />
+                                                <Font name="Krungthep" size="11.0"/>
                                             </font>
                                         </Button>
                                     </children>
                                 </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
+                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
+                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
                                     <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
+                                                   preserveRatio="true" styleClass="shadow">
                                             <image>
-                                                <Image url="@../../myndir/society.png" />
+                                                <Image url="@../../myndir/society.png"/>
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Gym Bro's">
+                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0"
+                                                style="-fx-background-color: transparent;" styleClass="shadow"
+                                                stylesheets="@../../styles.css" text="Gym Bro's">
                                             <font>
-                                                <Font name="Krungthep" size="11.0" />
+                                                <Font name="Krungthep" size="11.0"/>
                                             </font>
                                         </Button>
                                     </children>
                                 </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
+                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
+                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
                                     <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
+                                                   preserveRatio="true" styleClass="shadow">
                                             <image>
-                                                <Image url="@../../myndir/onlinestore.png" />
+                                                <Image url="@../../myndir/onlinestore.png"/>
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Online store">
+                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0"
+                                                style="-fx-background-color: transparent;" styleClass="shadow"
+                                                stylesheets="@../../styles.css" text="Online store">
                                             <font>
-                                                <Font name="Krungthep" size="11.0" />
+                                                <Font name="Krungthep" size="11.0"/>
                                             </font>
                                         </Button>
                                     </children>
                                 </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
+                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
+                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
                                     <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
+                                                   preserveRatio="true" styleClass="shadow">
                                             <image>
-                                                <Image url="@../../myndir/recipes.png" />
+                                                <Image url="@../../myndir/recipes.png"/>
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" onAction="#openWebsite1" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Recipes">
+                                        <SplitMenuButton mnemonicParsing="false" onAction="#fxrecipes" prefHeight="26.0"
+                                                         prefWidth="95.0" style="gradient-background: transparent;"
+                                                         styleClass="shadow" stylesheets="@../../styles.css"
+                                                         text="Recipes">
                                             <font>
-                                                <Font name="Krungthep" size="11.0" />
+                                                <Font name="Krungthep" size="11.0"/>
+                                            </font>
+                                            <items>
+                                                <!-- Add your menu items here -->
+                                                <MenuItem onAction="#openWebsite" text="BULK DIET"/>
+                                                <MenuItem onAction="#openWebsite2" text="RUNNERS DIET"/>
+                                                <MenuItem onAction="#openWebsite3" text="WEIGHTLOSS"/>
+                                            </items>
+                                        </SplitMenuButton>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
+                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
+                                    <children>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
+                                                   preserveRatio="true" styleClass="shadow">
+                                            <image>
+                                                <Image url="@../../myndir/information.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0"
+                                                style="-fx-background-color: transparent;" styleClass="shadow"
+                                                stylesheets="@../../styles.css" text="Feedback">
+                                            <font>
+                                                <Font name="Krungthep" size="11.0"/>
                                             </font>
                                         </Button>
                                     </children>
                                 </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
+                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0"
+                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
                                     <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
+                                                   preserveRatio="true" styleClass="shadow">
                                             <image>
-                                                <Image url="@../../myndir/information.png" />
+                                                <Image url="@../../myndir/back.png"/>
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Feedback">
+                                        <Button mnemonicParsing="false" onAction="#fxback2" prefHeight="26.0"
+                                                prefWidth="95.0" style="-fx-background-color: transparent;"
+                                                styleClass="shadow" stylesheets="@../../styles.css" text="Logout">
                                             <font>
-                                                <Font name="Krungthep" size="11.0" />
+                                                <Font name="Krungthep" size="11.0"/>
                                             </font>
                                         </Button>
                                     </children>
                                 </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
+                                <HBox alignment="CENTER" prefHeight="66.0" prefWidth="290.0" spacing="20.0"
+                                      styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
                                     <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
+                                                   preserveRatio="true" styleClass="shadow">
                                             <image>
-                                                <Image url="@../../myndir/back.png" />
+                                                <Image url="@../../myndir/icons8-back-arrow-50.png"/>
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" onAction="#fxback2" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Logout">
+                                        <Button mnemonicParsing="false" onAction="#fxback2" prefHeight="26.0"
+                                                prefWidth="95.0" style="-fx-background-color: transparent;"
+                                                styleClass="shadow" stylesheets="@../../styles.css" text="Back">
                                             <font>
-                                                <Font name="Krungthep" size="11.0" />
-                                            </font>
-                                        </Button>
-                                    </children>
-                                </HBox>
-                                <HBox alignment="CENTER" prefHeight="66.0" prefWidth="290.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
-                                    <children>
-                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
-                                            <image>
-                                                <Image url="@../../myndir/icons8-back-arrow-50.png" />
-                                            </image>
-                                        </ImageView>
-                                        <Button mnemonicParsing="false" onAction="#fxback2" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Back">
-                                            <font>
-                                                <Font name="Krungthep" size="11.0" />
+                                                <Font name="Krungthep" size="11.0"/>
                                             </font>
                                         </Button>
                                     </children>
@@ -203,245 +250,275 @@
             <center>
                 <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                     <BorderPane.margin>
-                        <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+                        <Insets bottom="10.0" left="10.0" right="20.0" top="10.0"/>
                     </BorderPane.margin>
                     <children>
-                        <VBox prefHeight="265.0" prefWidth="860.0" styleClass="container" stylesheets="@../../styles.css">
+                        <VBox prefHeight="265.0" prefWidth="860.0" styleClass="container"
+                              stylesheets="@../../styles.css">
                             <children>
-                                <Label prefHeight="25.0" prefWidth="91.0" styleClass="shadow" stylesheets="@../../styles.css" text="BICEPS">
+                                <Label prefHeight="25.0" prefWidth="91.0" styleClass="shadow"
+                                       stylesheets="@../../styles.css" text="BICEPS">
                                     <font>
-                                        <Font name="Krungthep" size="14.0" />
+                                        <Font name="Krungthep" size="14.0"/>
                                     </font>
                                     <VBox.margin>
-                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
                                     </VBox.margin>
                                 </Label>
                                 <HBox prefHeight="140.0" prefWidth="860.0">
                                     <children>
-                                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true"
+                                                   preserveRatio="true">
                                             <image>
-                                                <Image url="@../../myndir/sittedcurls.jpg" />
+                                                <Image url="@../../myndir/sittedcurls.jpg"/>
                                             </image>
                                             <HBox.margin>
-                                                <Insets left="15.0" right="15.0" />
+                                                <Insets left="15.0" right="15.0"/>
                                             </HBox.margin>
                                         </ImageView>
-                                        <ImageView fitHeight="138.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="138.0" fitWidth="224.0" pickOnBounds="true"
+                                                   preserveRatio="true">
                                             <image>
-                                                <Image url="@../../myndir/Standingcurls.jpg" />
+                                                <Image url="@../../myndir/Standingcurls.jpg"/>
                                             </image>
                                             <HBox.margin>
-                                                <Insets left="15.0" right="15.0" />
+                                                <Insets left="15.0" right="15.0"/>
                                             </HBox.margin>
                                         </ImageView>
-                                        <ImageView fitHeight="138.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="138.0" fitWidth="224.0" pickOnBounds="true"
+                                                   preserveRatio="true">
                                             <image>
-                                                <Image url="@../../myndir/preachercurls.jpg" />
+                                                <Image url="@../../myndir/preachercurls.jpg"/>
                                             </image>
                                             <HBox.margin>
-                                                <Insets left="15.0" right="15.0" />
+                                                <Insets left="15.0" right="15.0"/>
                                             </HBox.margin>
                                         </ImageView>
                                     </children>
                                 </HBox>
                                 <HBox prefHeight="100.0" prefWidth="200.0">
                                     <children>
-                                        <Button fx:id="sittedCurls" mnemonicParsing="false" prefHeight="22.0" prefWidth="150.0" text="Sitted Curls">
+                                        <Button fx:id="sittedCurls" mnemonicParsing="false" prefHeight="22.0"
+                                                prefWidth="150.0" text="Sitted Curls">
                                             <HBox.margin>
-                                                <Insets left="40.0" right="55.0" />
+                                                <Insets left="40.0" right="55.0"/>
                                             </HBox.margin>
                                         </Button>
-                                        <Button fx:id="dragCurls" mnemonicParsing="false" prefHeight="22.0" prefWidth="150.0" text="Drag Curls">
+                                        <Button fx:id="dragCurls" mnemonicParsing="false" prefHeight="22.0"
+                                                prefWidth="150.0" text="Drag Curls">
                                             <HBox.margin>
-                                                <Insets left="40.0" />
+                                                <Insets left="40.0"/>
                                             </HBox.margin>
                                         </Button>
-                                        <Button fx:id="preacherCurls" mnemonicParsing="false" prefHeight="22.0" prefWidth="150.0" text="Preacher Curls">
+                                        <Button fx:id="preacherCurls" mnemonicParsing="false" prefHeight="22.0"
+                                                prefWidth="150.0" text="Preacher Curls">
                                             <HBox.margin>
-                                                <Insets left="100.0" />
+                                                <Insets left="100.0"/>
                                             </HBox.margin>
                                         </Button>
                                     </children>
                                 </HBox>
                             </children>
                             <padding>
-                                <Insets bottom="10.0" />
+                                <Insets bottom="10.0"/>
                             </padding>
                             <VBox.margin>
-                                <Insets bottom="10.0" />
+                                <Insets bottom="10.0"/>
                             </VBox.margin>
                         </VBox>
-                        <VBox prefHeight="265.0" prefWidth="860.0" styleClass="container" stylesheets="@../../styles.css">
+                        <VBox prefHeight="265.0" prefWidth="860.0" styleClass="container"
+                              stylesheets="@../../styles.css">
                             <children>
-                                <Label prefHeight="25.0" prefWidth="91.0" styleClass="shadow" stylesheets="@../../styles.css" text="BACK">
+                                <Label prefHeight="25.0" prefWidth="91.0" styleClass="shadow"
+                                       stylesheets="@../../styles.css" text="BACK">
                                     <font>
-                                        <Font name="Krungthep" size="14.0" />
+                                        <Font name="Krungthep" size="14.0"/>
                                     </font>
                                     <VBox.margin>
-                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
                                     </VBox.margin>
                                 </Label>
                                 <HBox prefHeight="140.0" prefWidth="860.0">
                                     <children>
-                                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true"
+                                                   preserveRatio="true">
                                             <image>
-                                                <Image url="@../../myndir/Chinups.jpg" />
+                                                <Image url="@../../myndir/Chinups.jpg"/>
                                             </image>
                                             <HBox.margin>
-                                                <Insets left="15.0" right="15.0" />
+                                                <Insets left="15.0" right="15.0"/>
                                             </HBox.margin>
                                         </ImageView>
-                                        <ImageView fx:id="fxrow" fitHeight="138.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="fxrow" fitHeight="138.0" fitWidth="224.0" pickOnBounds="true"
+                                                   preserveRatio="true">
                                             <image>
-                                                <Image url="@../../myndir/Rows.jpg" />
+                                                <Image url="@../../myndir/Rows.jpg"/>
                                             </image>
                                             <HBox.margin>
-                                                <Insets left="15.0" right="15.0" />
+                                                <Insets left="15.0" right="15.0"/>
                                             </HBox.margin>
                                         </ImageView>
                                     </children>
                                 </HBox>
                                 <HBox prefHeight="100.0" prefWidth="200.0">
                                     <children>
-                                        <Button fx:id="chinUps" mnemonicParsing="false" prefHeight="22.0" prefWidth="150.0" text="Chin ups">
+                                        <Button fx:id="chinUps" mnemonicParsing="false" prefHeight="22.0"
+                                                prefWidth="150.0" text="Chin ups">
                                             <HBox.margin>
-                                                <Insets left="40.0" right="55.0" />
+                                                <Insets left="40.0" right="55.0"/>
                                             </HBox.margin>
                                         </Button>
-                                        <Button fx:id="rows" mnemonicParsing="false" prefHeight="22.0" prefWidth="150.0" text="Rows">
+                                        <Button fx:id="rows" mnemonicParsing="false" prefHeight="22.0" prefWidth="150.0"
+                                                text="Rows">
                                             <HBox.margin>
-                                                <Insets left="40.0" />
+                                                <Insets left="40.0"/>
                                             </HBox.margin>
                                         </Button>
                                     </children>
                                 </HBox>
                             </children>
                             <VBox.margin>
-                                <Insets bottom="10.0" />
+                                <Insets bottom="10.0"/>
                             </VBox.margin>
                         </VBox>
-                        <VBox prefHeight="265.0" prefWidth="860.0" styleClass="container" stylesheets="@../../styles.css">
+                        <VBox prefHeight="265.0" prefWidth="860.0" styleClass="container"
+                              stylesheets="@../../styles.css">
                             <children>
-                                <Label prefHeight="25.0" prefWidth="91.0" styleClass="shadow" stylesheets="@../../styles.css" text="CHEST">
+                                <Label prefHeight="25.0" prefWidth="91.0" styleClass="shadow"
+                                       stylesheets="@../../styles.css" text="CHEST">
                                     <font>
-                                        <Font name="Krungthep" size="14.0" />
+                                        <Font name="Krungthep" size="14.0"/>
                                     </font>
                                     <VBox.margin>
-                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
                                     </VBox.margin>
                                 </Label>
                                 <HBox prefHeight="140.0" prefWidth="860.0">
                                     <children>
-                                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true"
+                                                   preserveRatio="true">
                                             <image>
-                                                <Image url="@../../myndir/Bekkpressa.jpg" />
+                                                <Image url="@../../myndir/Bekkpressa.jpg"/>
                                             </image>
                                             <HBox.margin>
-                                                <Insets left="15.0" right="15.0" />
+                                                <Insets left="15.0" right="15.0"/>
                                             </HBox.margin>
                                         </ImageView>
-                                        <ImageView fitHeight="138.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="138.0" fitWidth="224.0" pickOnBounds="true"
+                                                   preserveRatio="true">
                                             <image>
-                                                <Image url="@../../myndir/inclinebekkur.jpg" />
+                                                <Image url="@../../myndir/inclinebekkur.jpg"/>
                                             </image>
                                             <HBox.margin>
-                                                <Insets left="15.0" right="15.0" />
+                                                <Insets left="15.0" right="15.0"/>
                                             </HBox.margin>
                                         </ImageView>
-                                        <ImageView fitHeight="138.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="138.0" fitWidth="224.0" pickOnBounds="true"
+                                                   preserveRatio="true">
                                             <image>
-                                                <Image url="@../../myndir/cablecross.jpg" />
+                                                <Image url="@../../myndir/cablecross.jpg"/>
                                             </image>
                                             <HBox.margin>
-                                                <Insets left="15.0" right="15.0" />
+                                                <Insets left="15.0" right="15.0"/>
                                             </HBox.margin>
                                         </ImageView>
                                     </children>
                                 </HBox>
                                 <HBox prefHeight="100.0" prefWidth="200.0">
                                     <children>
-                                        <Button fx:id="bench" mnemonicParsing="false" prefHeight="22.0" prefWidth="150.0" text="Bench">
+                                        <Button fx:id="bench" mnemonicParsing="false" prefHeight="22.0"
+                                                prefWidth="150.0" text="Bench">
                                             <HBox.margin>
-                                                <Insets left="40.0" right="55.0" />
+                                                <Insets left="40.0" right="55.0"/>
                                             </HBox.margin>
                                         </Button>
-                                        <Button fx:id="inclineBench" mnemonicParsing="false" prefHeight="22.0" prefWidth="150.0" text="Incline Benc">
+                                        <Button fx:id="inclineBench" mnemonicParsing="false" prefHeight="22.0"
+                                                prefWidth="150.0" text="Incline Benc">
                                             <HBox.margin>
-                                                <Insets left="40.0" />
+                                                <Insets left="40.0"/>
                                             </HBox.margin>
                                         </Button>
-                                        <Button fx:id="cableCross" mnemonicParsing="false" prefHeight="22.0" prefWidth="150.0" text="Cable Cross">
+                                        <Button fx:id="cableCross" mnemonicParsing="false" prefHeight="22.0"
+                                                prefWidth="150.0" text="Cable Cross">
                                             <HBox.margin>
-                                                <Insets left="100.0" />
+                                                <Insets left="100.0"/>
                                             </HBox.margin>
                                         </Button>
                                     </children>
                                 </HBox>
                             </children>
                             <VBox.margin>
-                                <Insets bottom="10.0" />
+                                <Insets bottom="10.0"/>
                             </VBox.margin>
                         </VBox>
-                        <VBox prefHeight="265.0" prefWidth="860.0" styleClass="container" stylesheets="@../../styles.css">
+                        <VBox prefHeight="265.0" prefWidth="860.0" styleClass="container"
+                              stylesheets="@../../styles.css">
                             <children>
-                                <Label prefHeight="25.0" prefWidth="91.0" styleClass="shadow" stylesheets="@../../styles.css" text="LEGS">
+                                <Label prefHeight="25.0" prefWidth="91.0" styleClass="shadow"
+                                       stylesheets="@../../styles.css" text="LEGS">
                                     <font>
-                                        <Font name="Krungthep" size="14.0" />
+                                        <Font name="Krungthep" size="14.0"/>
                                     </font>
                                     <VBox.margin>
-                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
                                     </VBox.margin>
                                 </Label>
                                 <HBox prefHeight="140.0" prefWidth="860.0">
                                     <children>
-                                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true"
+                                                   preserveRatio="true">
                                             <image>
-                                                <Image url="@../../myndir/squata.jpg" />
+                                                <Image url="@../../myndir/squata.jpg"/>
                                             </image>
                                             <HBox.margin>
-                                                <Insets left="15.0" right="15.0" />
+                                                <Insets left="15.0" right="15.0"/>
                                             </HBox.margin>
                                         </ImageView>
-                                        <ImageView fitHeight="138.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="138.0" fitWidth="224.0" pickOnBounds="true"
+                                                   preserveRatio="true">
                                             <image>
-                                                <Image url="@../../myndir/legextention.jpg" />
+                                                <Image url="@../../myndir/legextention.jpg"/>
                                             </image>
                                             <HBox.margin>
-                                                <Insets left="15.0" right="15.0" />
+                                                <Insets left="15.0" right="15.0"/>
                                             </HBox.margin>
                                         </ImageView>
-                                        <ImageView fitHeight="138.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="138.0" fitWidth="224.0" pickOnBounds="true"
+                                                   preserveRatio="true">
                                             <image>
-                                                <Image url="@../../myndir/pressa.jpg" />
+                                                <Image url="@../../myndir/pressa.jpg"/>
                                             </image>
                                             <HBox.margin>
-                                                <Insets left="15.0" right="15.0" />
+                                                <Insets left="15.0" right="15.0"/>
                                             </HBox.margin>
                                         </ImageView>
                                     </children>
                                 </HBox>
                                 <HBox prefHeight="100.0" prefWidth="200.0">
                                     <children>
-                                        <Button fx:id="squat" mnemonicParsing="false" prefHeight="22.0" prefWidth="150.0" text="Squat">
+                                        <Button fx:id="squat" mnemonicParsing="false" prefHeight="22.0"
+                                                prefWidth="150.0" text="Squat">
                                             <HBox.margin>
-                                                <Insets left="40.0" right="55.0" />
+                                                <Insets left="40.0" right="55.0"/>
                                             </HBox.margin>
                                         </Button>
-                                        <Button fx:id="legExtension" mnemonicParsing="false" prefHeight="22.0" prefWidth="150.0" text="Leg Extension">
+                                        <Button fx:id="legExtension" mnemonicParsing="false" prefHeight="22.0"
+                                                prefWidth="150.0" text="Leg Extension">
                                             <HBox.margin>
-                                                <Insets left="40.0" />
+                                                <Insets left="40.0"/>
                                             </HBox.margin>
                                         </Button>
-                                        <Button fx:id="legPress" mnemonicParsing="false" prefHeight="22.0" prefWidth="150.0" text="Leg Press">
+                                        <Button fx:id="legPress" mnemonicParsing="false" prefHeight="22.0"
+                                                prefWidth="150.0" text="Leg Press">
                                             <HBox.margin>
-                                                <Insets left="100.0" />
+                                                <Insets left="100.0"/>
                                             </HBox.margin>
                                         </Button>
                                     </children>
                                 </HBox>
                             </children>
                             <VBox.margin>
-                                <Insets bottom="10.0" />
+                                <Insets bottom="10.0"/>
                             </VBox.margin>
                         </VBox>
                     </children>
