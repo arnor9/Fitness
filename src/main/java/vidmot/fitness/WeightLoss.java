@@ -27,6 +27,20 @@ public class WeightLoss {
 
     @FXML
     private CheckBox fxmyprogress1;
+    @FXML
+    private CheckBox myprogress2;
+
+    @FXML
+    private CheckBox myprogress3;
+
+    @FXML
+    private CheckBox myprogress4;
+
+    @FXML
+    private CheckBox myprogress5;
+
+    @FXML
+    private CheckBox myprogress6;
 
     BigDecimal progress = new BigDecimal(String.format("%.2f", 0.0));
 
@@ -35,7 +49,52 @@ public class WeightLoss {
     @FXML
     void myprogress1(ActionEvent event) {
         if (progress.doubleValue() < 1) {
-            progress = new BigDecimal(String.format("%.2f", progress.doubleValue() + 0.1));
+            progress = new BigDecimal(String.format("%.2f", progress.doubleValue() + 0.164));
+            myProgressBar.setProgress(progress.doubleValue());
+            myprogresslabel.setText(Double.toString((int) Math.round((progress.doubleValue() * 100))) + "%");
+        }
+    }
+
+    @FXML
+    void myprogress2(ActionEvent event) {
+        if (progress.doubleValue() < 1) {
+            progress = new BigDecimal(String.format("%.2f", progress.doubleValue() + 0.164));
+            myProgressBar.setProgress(progress.doubleValue());
+            myprogresslabel.setText(Double.toString((int) Math.round((progress.doubleValue() * 100))) + "%");
+        }
+    }
+
+    @FXML
+    void myprogress3(ActionEvent event) {
+        if (progress.doubleValue() < 1) {
+            progress = new BigDecimal(String.format("%.2f", progress.doubleValue() + 0.164));
+            myProgressBar.setProgress(progress.doubleValue());
+            myprogresslabel.setText(Double.toString((int) Math.round((progress.doubleValue() * 100))) + "%");
+        }
+    }
+
+    @FXML
+    void myprogress4(ActionEvent event) {
+        if (progress.doubleValue() < 1) {
+            progress = new BigDecimal(String.format("%.2f", progress.doubleValue() + 0.164));
+            myProgressBar.setProgress(progress.doubleValue());
+            myprogresslabel.setText(Double.toString((int) Math.round((progress.doubleValue() * 100))) + "%");
+        }
+    }
+
+    @FXML
+    void myprogress5(ActionEvent event) {
+        if (progress.doubleValue() < 1) {
+            progress = new BigDecimal(String.format("%.2f", progress.doubleValue() + 0.164));
+            myProgressBar.setProgress(progress.doubleValue());
+            myprogresslabel.setText(Double.toString((int) Math.round((progress.doubleValue() * 100))) + "%");
+        }
+    }
+
+    @FXML
+    void myprogress6(ActionEvent event) {
+        if (progress.doubleValue() < 1) {
+            progress = new BigDecimal(String.format("%.2f", progress.doubleValue() + 0.164));
             myProgressBar.setProgress(progress.doubleValue());
             myprogresslabel.setText(Double.toString((int) Math.round((progress.doubleValue() * 100))) + "%");
         }
@@ -78,5 +137,41 @@ public class WeightLoss {
 
     public void fxbros(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.BROS);
+    }
+
+    public void fxtilbaka4(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.MAIN);
+    }
+
+    public void fxcalendar(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.CALANDER);
+    }
+
+    public void fxrecipes(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.RECIPES);
+    }
+
+    public void fxcardio(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.SPINNING);
+    }
+
+    public void fxupperbody(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.MUSCLES);
+    }
+
+    public void fxlowerbodt(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.MUSCLES);
+    }
+
+    public void fxenergywalk(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.ENERGY);
+    }
+
+    public void fxyoga(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.YOGA);
+    }
+
+    public void fxlocation(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.LACT);
     }
 }

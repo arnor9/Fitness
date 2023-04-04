@@ -93,4 +93,16 @@ public class CalendarController {
     public void fxtilbaka(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.LOGIN);
     }
+
+    public void fxbros(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.BROS);
+    }
+
+    public void fxrecipes(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.RECIPES);
+    }
+
+    public void fxlocation(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.LACT);
+    }
 }

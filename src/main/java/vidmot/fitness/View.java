@@ -14,7 +14,8 @@ public enum View {
     SPINNING("spinning-view.fxml"),
     CALANDER("calendar-view.fxml"),
     BROS("gymBros-view.fxml"),
-    RECIPES("recipes-view.fxml");
+    RECIPES("recipes-view.fxml"),
+    LACT("Location-view.fxml");
 
 
     private String fileName;

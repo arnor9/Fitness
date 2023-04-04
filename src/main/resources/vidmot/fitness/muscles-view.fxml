@@ -90,7 +90,7 @@
                                                 <Image url="@../../myndir/locations.png" />
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Gym location">
+                                        <Button mnemonicParsing="false" onAction="#fxlocation" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Gym location">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>

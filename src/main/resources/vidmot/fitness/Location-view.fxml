@@ -3,7 +3,6 @@
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
@@ -14,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.CalendarController">
+<ScrollPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.fitness.LocationViewController">
     <content>
         <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1200.0" styleClass="gradient-background" stylesheets="@../../styles.css">
             <top>
@@ -85,37 +84,41 @@
                                         </Button>
                                     </children>
                                 </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
+                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" stylesheets="@../../styles.css">
                                     <children>
                                         <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
                                             <image>
                                                 <Image url="@../../myndir/locations.png" />
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" onAction="#fxlocation" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Gym location">
+                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" stylesheets="@../../styles.css" text="Gym location">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>
+                                            <styleClass>
+                                                <String fx:value="shadow" />
+                                                <String fx:value="button-container-mouse-moved" />
+                                            </styleClass>
                                         </Button>
                                     </children>
+                                    <styleClass>
+                                        <String fx:value="button-container-mouse-moved" />
+                                        <String fx:value="gradient-background" />
+                                    </styleClass>
                                 </HBox>
-                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" stylesheets="@../../styles.css">
+                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
                                     <children>
                                         <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
                                             <image>
                                                 <Image url="@../../myndir/calander.png" />
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Calander">
+                                        <Button mnemonicParsing="false" onAction="#fxcalendar" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Calander">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>
                                         </Button>
                                     </children>
-                                    <styleClass>
-                                        <String fx:value="button-container-mouse-moved" />
-                                        <String fx:value="selected-button-container" />
-                                    </styleClass>
                                 </HBox>
                                 <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
                                     <children>
@@ -207,22 +210,115 @@
                 </VBox>
             </left>
             <center>
-                <Pane prefHeight="848.0" prefWidth="904.0">
+                <Pane prefHeight="848.0" prefWidth="904.0" styleClass="button-container-mouse-moved">
                     <children>
-                        <HBox layoutX="3.0" layoutY="11.0" prefHeight="181.0" prefWidth="878.0" styleClass="container" stylesheets="@../../styles.css">
-                            <children>
-                                <Pane prefHeight="187.0" prefWidth="888.0">
-                                    <children>
-                                        <DatePicker fx:id="fxDagatal" layoutX="55.0" layoutY="60.0" onAction="#veljaDagsetningu" />
-                                        <Label fx:id="fxSnidinnDagur" layoutX="399.0" layoutY="69.0" prefHeight="25.0" prefWidth="252.0" text="Dagur" />
-                                        <Label fx:id="fxworkout" layoutX="50.0" layoutY="111.0" prefHeight="31.0" prefWidth="205.0" text="Choose a date to see your workout" />
-                                        <Label fx:id="fxDagurSjalfvirkt" layoutX="403.0" layoutY="118.0" prefHeight="25.0" prefWidth="252.0" text="Label" />
-                                        <Label layoutX="289.0" layoutY="67.0" prefHeight="24.0" prefWidth="95.0" text="Today's Date:" />
-                                        <Label layoutX="288.0" layoutY="107.0" prefHeight="42.0" prefWidth="90.0" text="Choosen Date:" />
-                                    </children>
-                                </Pane>
-                            </children>
-                        </HBox>
+                        <ImageView fitHeight="510.0" fitWidth="770.0" layoutX="53.0" layoutY="16.0">
+                            <image>
+                                <Image url="@../../myndir/large_road_map_of_reykjavik_city.jpg" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="79.0" layoutY="543.0" prefHeight="27.0" prefWidth="161.0" text="World Class Stöðvar" textAlignment="RIGHT">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="24.0" fitWidth="16.0" layoutX="656.0" layoutY="220.0">
+                            <image>
+                                <Image url="@../../myndir/30px-Google_Maps_pin.svg.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="16.0" layoutX="613.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../myndir/30px-Google_Maps_pin.svg.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="16.0" layoutX="422.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../myndir/30px-Google_Maps_pin.svg.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="16.0" layoutX="437.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../myndir/30px-Google_Maps_pin.svg.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="16.0" layoutX="151.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../myndir/30px-Google_Maps_pin.svg.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="16.0" layoutX="204.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../myndir/30px-Google_Maps_pin.svg.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="16.0" layoutX="395.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../myndir/30px-Google_Maps_pin.svg.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="16.0" layoutX="315.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../myndir/30px-Google_Maps_pin.svg.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="16.0" layoutX="569.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../myndir/30px-Google_Maps_pin.svg.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="16.0" layoutX="278.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../myndir/30px-Google_Maps_pin.svg.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="16.0" layoutX="807.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../myndir/30px-Google_Maps_pin.svg.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="16.0" layoutX="278.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../myndir/30px-Google_Maps_pin.svg.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="16.0" layoutX="689.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../myndir/30px-Google_Maps_pin.svg.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="78.0" layoutY="593.0" text="Árbær" />
+                        <Label layoutX="78.0" layoutY="628.0" text="Breiðholt" />
+                        <Label layoutX="78.0" layoutY="662.0" text="Egilshöll" />
+                        <Label layoutX="78.0" layoutY="695.0" text="Dalshraun" />
+                        <Label layoutX="78.0" layoutY="729.0" text="HR" />
+                        <Label layoutX="239.0" layoutY="593.0" text="Kringlan" />
+                        <Label layoutX="239.0" layoutY="628.0" text="Laugar" />
+                        <Label layoutX="239.0" layoutY="662.0" text="Mosfellsbær" />
+                        <Label layoutX="239.0" layoutY="695.0" text="Seltjarnanes" />
+                        <Label layoutX="239.0" layoutY="729.0" text="Smáralind" />
+                        <Label layoutX="389.0" layoutY="593.0" text="Ögurhvarf" />
+                        <Label layoutX="389.0" layoutY="628.0" text="Tjarnavellir" />
+                        <Label layoutX="389.0" layoutY="662.0" text="Vatnsmýri" />
+                        <Button layoutX="144.0" layoutY="589.0" maxHeight="20.0" maxWidth="53.0" mnemonicParsing="false" onAction="#WCArb" prefHeight="18.0" prefWidth="53.0" text="Nánar" />
+                        <Button layoutX="145.0" layoutY="624.0" mnemonicParsing="false" onAction="#WCBH" text="Nánar" />
+                        <Button layoutX="145.0" layoutY="658.0" mnemonicParsing="false" onAction="#WCEG" text="Nánar" />
+                        <Button layoutX="144.0" layoutY="691.0" mnemonicParsing="false" onAction="#WCDAL" text="Nánar" />
+                        <Button layoutX="146.0" layoutY="725.0" mnemonicParsing="false" onAction="#WCHR" text="Nánar" />
+                        <Button layoutX="315.0" layoutY="589.0" mnemonicParsing="false" onAction="#WCK" text="Nánar" />
+                        <Button layoutX="315.0" layoutY="624.0" mnemonicParsing="false" onAction="#WCL" text="Nánar" />
+                        <Button layoutX="315.0" layoutY="658.0" mnemonicParsing="false" onAction="#WCMOS" text="Nánar" />
+                        <Button layoutX="315.0" layoutY="691.0" mnemonicParsing="false" onAction="#WCSEL" text="Nánar" />
+                        <Button layoutX="315.0" layoutY="725.0" mnemonicParsing="false" onAction="#WCSMA" text="Nánar" />
+                        <Button layoutX="453.0" layoutY="589.0" mnemonicParsing="false" onAction="#WCOG" text="Nánar" />
+                        <Button layoutX="453.0" layoutY="624.0" mnemonicParsing="false" onAction="#WCTJV" text="Nánar" />
+                        <Button layoutX="453.0" layoutY="658.0" mnemonicParsing="false" onAction="#WCVM" text="Nánar" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="572.0" layoutY="583.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="240.0" fitWidth="276.0" layoutX="523.0" layoutY="541.0">
+                            <image>
+                                <Image url="@../../myndir/world-class-logoat2x.png" />
+                            </image>
+                        </ImageView>
                     </children>
                 </Pane>
             </center>

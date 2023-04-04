@@ -35,4 +35,16 @@ public class GymBrosController {
     public void fxtilbaka4(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.MAIN);
     }
+
+    public void fxcalendar(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.CALANDER);
+    }
+
+    public void fxrecipes(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.RECIPES);
+    }
+
+    public void fxlocation(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.LACT);
+    }
 }

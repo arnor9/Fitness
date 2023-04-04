@@ -83,5 +83,9 @@ public class Muscles {
     public void fxback2(ActionEvent event) {
         ViewSwitcher.switchTo(View.MAIN);
     }
+
+    public void fxlocation(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.LACT);
+    }
 }
 

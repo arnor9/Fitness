@@ -77,6 +77,7 @@ public class MainPage implements Initializable {
     }
 
     public void fxrunning(ActionEvent actionEvent) {
+        data.setUsername(fxUsername.getText());
         ViewSwitcher.switchTo(View.RUNNING);
     }
 
@@ -206,5 +207,8 @@ public class MainPage implements Initializable {
         } catch (IOException | URISyntaxException e) {
         }
     }
-    
+
+    public void fxlocation(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.LACT);
+    }
 }

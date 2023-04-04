@@ -22,7 +22,7 @@
             <top>
                 <HBox alignment="CENTER" prefHeight="61.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
                     <children>
-                        <Label fx:id="fxweightlabel" alignment="CENTER" prefHeight="60.0" prefWidth="214.0" styleClass="shadow" stylesheets="@../../styles.css" text="ADMIN DASHBOARD">
+                        <Label fx:id="fxweightlabel" alignment="CENTER" prefHeight="60.0" prefWidth="214.0" styleClass="shadow" stylesheets="@../../styles.css">
                             <font>
                                 <Font name="Krungthep" size="18.0" />
                             </font>
@@ -94,7 +94,7 @@
                                                 <Image url="@../../myndir/locations.png" />
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Gym location">
+                                        <Button mnemonicParsing="false" onAction="#fxlocation" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Gym location">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>
@@ -108,7 +108,7 @@
                                                 <Image url="@../../myndir/calander.png" />
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Calander">
+                                        <Button mnemonicParsing="false" onAction="#fxcalendar" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Calander">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>
@@ -150,7 +150,7 @@
                                                 <Image url="@../../myndir/recipes.png" />
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Recipes">
+                                        <Button mnemonicParsing="false" onAction="#fxrecipes" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Recipes">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>
@@ -185,6 +185,20 @@
                                         </Button>
                                     </children>
                                 </HBox>
+                                <HBox alignment="CENTER" prefHeight="65.0" prefWidth="290.0" spacing="20.0" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css">
+                                    <children>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                            <image>
+                                                <Image url="@../../myndir/icons8-back-arrow-50.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Button mnemonicParsing="false" onAction="#fxtilbaka4" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Back">
+                                            <font>
+                                                <Font name="Krungthep" size="11.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </HBox>
                             </children>
                         </VBox>
                     </children>
@@ -199,249 +213,249 @@
                                     <font>
                                         <Font name="Krungthep" size="18.0" />
                                     </font>
-                           <HBox.margin>
-                              <Insets left="10.0" right="10.0" top="10.0" />
-                           </HBox.margin>
+                                    <HBox.margin>
+                                        <Insets left="10.0" right="10.0" top="10.0" />
+                                    </HBox.margin>
                                 </Label>
-                        <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="653.0">
-                           <children>
-                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
-                                 <children>
-                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
-                                       <children>
-                                          <Label text="Monday" textFill="WHITE">
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                       <HBox.margin>
-                                          <Insets />
-                                       </HBox.margin>
-                                    </HBox>
-                                    <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Cardio">
-                                       <font>
-                                          <Font name="Krungthep" size="13.0" />
-                                       </font>
-                                    </Button>
-                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.9497476816177368" />
-                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
-                                       <children>
-                                          <Label text="20'">
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                                 <VBox.margin>
-                                    <Insets bottom="10.0" top="60.0" />
-                                 </VBox.margin>
-                              </HBox>
-                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
-                                 <children>
-                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
-                                       <children>
-                                          <Label text="Tuesday" textFill="WHITE">
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                       <HBox.margin>
-                                          <Insets />
-                                       </HBox.margin>
-                                    </HBox>
-                                    <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Upper body">
-                                       <font>
-                                          <Font name="Krungthep" size="13.0" />
-                                       </font>
-                                    </Button>
-                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
-                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
-                                       <children>
-                                          <Label text="15'">
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                                 <VBox.margin>
-                                    <Insets bottom="10.0" />
-                                 </VBox.margin>
-                              </HBox>
-                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
-                                 <children>
-                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
-                                       <children>
-                                          <Label text="Wednesday" textFill="WHITE">
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                       <HBox.margin>
-                                          <Insets />
-                                       </HBox.margin>
-                                    </HBox>
-                                    <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Rest">
-                                       <font>
-                                          <Font name="Krungthep" size="13.0" />
-                                       </font>
-                                    </Button>
-                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
-                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
-                                       <children>
-                                          <Label>
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                                 <VBox.margin>
-                                    <Insets bottom="10.0" />
-                                 </VBox.margin>
-                              </HBox>
-                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
-                                 <children>
-                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
-                                       <children>
-                                          <Label text="Thursday" textFill="WHITE">
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                       <HBox.margin>
-                                          <Insets />
-                                       </HBox.margin>
-                                    </HBox>
-                                    <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Lower body">
-                                       <font>
-                                          <Font name="Krungthep" size="13.0" />
-                                       </font>
-                                    </Button>
-                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
-                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
-                                       <children>
-                                          <Label text="25'">
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                                 <VBox.margin>
-                                    <Insets bottom="10.0" />
-                                 </VBox.margin>
-                              </HBox>
-                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
-                                 <children>
-                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
-                                       <children>
-                                          <Label text="Friday" textFill="WHITE">
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                       <HBox.margin>
-                                          <Insets />
-                                       </HBox.margin>
-                                    </HBox>
-                                    <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Energy walk">
-                                       <font>
-                                          <Font name="Krungthep" size="13.0" />
-                                       </font>
-                                    </Button>
-                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
-                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
-                                       <children>
-                                          <Label text="30'">
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                                 <VBox.margin>
-                                    <Insets bottom="10.0" />
-                                 </VBox.margin>
-                              </HBox>
-                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
-                                 <children>
-                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
-                                       <children>
-                                          <Label text="Saturday" textFill="WHITE">
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                       <HBox.margin>
-                                          <Insets />
-                                       </HBox.margin>
-                                    </HBox>
-                                    <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Yoga">
-                                       <font>
-                                          <Font name="Krungthep" size="13.0" />
-                                       </font>
-                                    </Button>
-                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
-                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
-                                       <children>
-                                          <Label text="25'">
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                                 <VBox.margin>
-                                    <Insets bottom="10.0" />
-                                 </VBox.margin>
-                              </HBox>
-                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
-                                 <children>
-                                    <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
-                                       <children>
-                                          <Label text="Sunday" textFill="WHITE">
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                       <HBox.margin>
-                                          <Insets />
-                                       </HBox.margin>
-                                    </HBox>
-                                    <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Rest">
-                                       <font>
-                                          <Font name="Krungthep" size="13.0" />
-                                       </font>
-                                    </Button>
-                                    <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
-                                    <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
-                                       <children>
-                                          <Label>
-                                             <font>
-                                                <Font name="Krungthep" size="13.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </HBox>
-                           </children>
-                        </VBox>
+                                <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="653.0">
+                                    <children>
+                                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
+                                            <children>
+                                                <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                                    <children>
+                                                        <Label text="Monday" textFill="WHITE">
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </HBox>
+                                                <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" onAction="#fxcardio" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Cardio">
+                                                    <font>
+                                                        <Font name="Krungthep" size="13.0" />
+                                                    </font>
+                                                </Button>
+                                                <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.9497476816177368" />
+                                                <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                                    <children>
+                                                        <Label text="20'">
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" top="60.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
+                                            <children>
+                                                <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                                    <children>
+                                                        <Label text="Tuesday" textFill="WHITE">
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </HBox>
+                                                <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" onAction="#fxupperbody" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Upper body">
+                                                    <font>
+                                                        <Font name="Krungthep" size="13.0" />
+                                                    </font>
+                                                </Button>
+                                                <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
+                                                <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                                    <children>
+                                                        <Label text="15'">
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
+                                            <children>
+                                                <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                                    <children>
+                                                        <Label text="Wednesday" textFill="WHITE">
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </HBox>
+                                                <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Rest">
+                                                    <font>
+                                                        <Font name="Krungthep" size="13.0" />
+                                                    </font>
+                                                </Button>
+                                                <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
+                                                <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                                    <children>
+                                                        <Label>
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
+                                            <children>
+                                                <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                                    <children>
+                                                        <Label text="Thursday" textFill="WHITE">
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </HBox>
+                                                <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" onAction="#fxlowerbodt" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Lower body">
+                                                    <font>
+                                                        <Font name="Krungthep" size="13.0" />
+                                                    </font>
+                                                </Button>
+                                                <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
+                                                <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                                    <children>
+                                                        <Label text="25'">
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
+                                            <children>
+                                                <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                                    <children>
+                                                        <Label text="Friday" textFill="WHITE">
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </HBox>
+                                                <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" onAction="#fxenergywalk" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Energy walk">
+                                                    <font>
+                                                        <Font name="Krungthep" size="13.0" />
+                                                    </font>
+                                                </Button>
+                                                <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
+                                                <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                                    <children>
+                                                        <Label text="30'">
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
+                                            <children>
+                                                <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                                    <children>
+                                                        <Label text="Saturday" textFill="WHITE">
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </HBox>
+                                                <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" onAction="#fxyoga" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Yoga">
+                                                    <font>
+                                                        <Font name="Krungthep" size="13.0" />
+                                                    </font>
+                                                </Button>
+                                                <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
+                                                <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                                    <children>
+                                                        <Label text="25'">
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="243.0" styleClass="shadow" stylesheets="@../../styles.css">
+                                            <children>
+                                                <HBox alignment="CENTER" maxWidth="121.0" minWidth="121.0" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #FA9C1B; -fx-background-radius: 10;">
+                                                    <children>
+                                                        <Label text="Sunday" textFill="WHITE">
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </HBox>
+                                                <Button minHeight="42.0" minWidth="121.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-background-color: #f9ddb1;" styleClass="button-container-mouse-moved" stylesheets="@../../styles.css" text="Rest">
+                                                    <font>
+                                                        <Font name="Krungthep" size="13.0" />
+                                                    </font>
+                                                </Button>
+                                                <Line endX="-66.20710754394531" endY="-1.2426408529281616" startX="-42.914215087890625" startY="-0.7426401376724243" />
+                                                <HBox alignment="CENTER" prefHeight="42.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                                                    <children>
+                                                        <Label>
+                                                            <font>
+                                                                <Font name="Krungthep" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
                             </children>
                             <VBox.margin>
                                 <Insets right="10.0" top="10.0" />
@@ -467,9 +481,10 @@
                                                 <HBox alignment="CENTER" prefHeight="41.0" prefWidth="435.0">
                                                     <children>
                                                         <Label fx:id="myprogresslabel" text="0%">
-                                             <font>
-                                                <Font name="Krungthep" size="24.0" />
-                                             </font></Label>
+                                                            <font>
+                                                                <Font name="Krungthep" size="24.0" />
+                                                            </font>
+                                                        </Label>
                                                     </children>
                                                     <VBox.margin>
                                                         <Insets bottom="10.0" top="30.0" />
@@ -487,7 +502,7 @@
                                                                 <Insets left="44.0" />
                                                             </HBox.margin>
                                                         </CheckBox>
-                                                        <CheckBox mnemonicParsing="false" text="Tuesday">
+                                                        <CheckBox fx:id="myprogress2" mnemonicParsing="false" onAction="#myprogress2" text="Tuesday">
                                                             <HBox.margin>
                                                                 <Insets bottom="10.0" left="60.0" />
                                                             </HBox.margin>
@@ -499,29 +514,29 @@
                                                 </HBox>
                                                 <HBox prefHeight="32.0" prefWidth="435.0">
                                                     <children>
-                                                        <CheckBox mnemonicParsing="false" text="Wednesday">
+                                                        <CheckBox fx:id="myprogress3" mnemonicParsing="false" onAction="#myprogress3" text="Wednesday">
                                                             <HBox.margin>
                                                                 <Insets left="44.0" />
                                                             </HBox.margin>
                                                         </CheckBox>
-                                                        <CheckBox mnemonicParsing="false" text="Thursday">
+                                                        <CheckBox fx:id="myprogress4" mnemonicParsing="false" onAction="#myprogress4" text="Thursday">
                                                             <HBox.margin>
                                                                 <Insets left="40.0" />
                                                             </HBox.margin>
                                                         </CheckBox>
                                                     </children>
-                                       <VBox.margin>
-                                          <Insets bottom="10.0" />
-                                       </VBox.margin>
+                                                    <VBox.margin>
+                                                        <Insets bottom="10.0" />
+                                                    </VBox.margin>
                                                 </HBox>
                                                 <HBox prefHeight="33.0" prefWidth="435.0">
                                                     <children>
-                                                        <CheckBox mnemonicParsing="false" text="Friday">
+                                                        <CheckBox fx:id="myprogress5" mnemonicParsing="false" onAction="#myprogress5" text="Friday">
                                                             <HBox.margin>
                                                                 <Insets left="44.0" />
                                                             </HBox.margin>
                                                         </CheckBox>
-                                                        <CheckBox mnemonicParsing="false" text="Saturday">
+                                                        <CheckBox fx:id="myprogress6" mnemonicParsing="false" onAction="#myprogress6" text="Saturday">
                                                             <HBox.margin>
                                                                 <Insets left="72.0" />
                                                             </HBox.margin>
@@ -536,21 +551,21 @@
                                     <HBox.margin>
                                         <Insets right="10.0" top="10.0" />
                                     </HBox.margin>
-                           <children>
-                              <Label styleClass="shadow" stylesheets="@../../styles.css" text="Gym Diary">
-                                 <font>
-                                    <Font name="Krungthep" size="18.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets left="10.0" right="10.0" top="10.0" />
-                                 </VBox.margin>
-                              </Label>
-                              <TextArea prefHeight="172.0" prefWidth="415.0" promptText="Write your thoughts..." style="-fx-background-color: transparent;">
-                                 <VBox.margin>
-                                    <Insets left="10.0" right="10.0" top="30.0" />
-                                 </VBox.margin>
-                              </TextArea>
-                           </children>
+                                    <children>
+                                        <Label styleClass="shadow" stylesheets="@../../styles.css" text="Gym Diary">
+                                            <font>
+                                                <Font name="Krungthep" size="18.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="10.0" right="10.0" top="10.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <TextArea prefHeight="172.0" prefWidth="415.0" promptText="Write your thoughts..." style="-fx-background-color: transparent;">
+                                            <VBox.margin>
+                                                <Insets left="10.0" right="10.0" top="30.0" />
+                                            </VBox.margin>
+                                        </TextArea>
+                                    </children>
                                 </VBox>
                             </children>
                         </HBox>

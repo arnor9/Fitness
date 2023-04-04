@@ -35,4 +35,8 @@ public class RecipesController {
     public void fxtilbaka4(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.MAIN);
     }
+
+    public void fxlocation(ActionEvent actionEvent) {
+        ViewSwitcher.switchTo(View.LACT);
+    }
 }
