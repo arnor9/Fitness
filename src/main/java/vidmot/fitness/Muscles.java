@@ -8,6 +8,11 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.awt.*;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+
 public class Muscles {
 
     @FXML
@@ -86,6 +91,16 @@ public class Muscles {
 
     public void fxlocation(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.LACT);
+    }
+
+    @FXML
+    private void openWebsite1() {
+        String url = "https://www.bonappetit.com/recipes/family-meals/slideshow/big-batch-recipes";
+        try {
+            Desktop.getDesktop().browse(new URI(url));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
     }
 }
 

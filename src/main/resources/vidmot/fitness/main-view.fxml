@@ -226,7 +226,7 @@
                                             <children>
                                                 <HBox alignment="CENTER" prefHeight="54.0" prefWidth="266.0">
                                                     <children>
-                                                        <Label fx:id="fxwaterpercent" prefHeight="17.0" prefWidth="86.0" styleClass="shadow" stylesheets="@../../styles.css" text="0%">
+                                                        <Label fx:id="fxwaterpercent" prefHeight="32.0" prefWidth="93.0" styleClass="shadow" stylesheets="@../../styles.css" text="0%">
                                                             <font>
                                                                 <Font name="Krungthep" size="24.0" />
                                                             </font>
@@ -252,7 +252,7 @@
                                             <children>
                                                 <HBox alignment="CENTER" prefHeight="47.0" prefWidth="266.0">
                                                     <children>
-                                                        <Label fx:id="fxcaloriespercent" prefHeight="17.0" prefWidth="69.0" styleClass="shadow" stylesheets="@../../styles.css" text="0%">
+                                                        <Label fx:id="fxcaloriespercent" prefHeight="32.0" prefWidth="97.0" styleClass="shadow" stylesheets="@../../styles.css" text="0%">
                                                             <font>
                                                                 <Font name="Krungthep" size="24.0" />
                                                             </font>
@@ -278,7 +278,7 @@
                                             <children>
                                                 <HBox alignment="CENTER" prefHeight="44.0" prefWidth="266.0">
                                                     <children>
-                                                        <Label fx:id="fxstepspercent" prefHeight="17.0" prefWidth="79.0" styleClass="shadow" stylesheets="@../../styles.css" text="0%">
+                                                        <Label fx:id="fxstepspercent" prefHeight="32.0" prefWidth="89.0" styleClass="shadow" stylesheets="@../../styles.css" text="0%">
                                                             <font>
                                                                 <Font name="Krungthep" size="24.0" />
                                                             </font>

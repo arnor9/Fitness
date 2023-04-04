@@ -146,7 +146,7 @@
                                                 <Image url="@../../myndir/recipes.png" />
                                             </image>
                                         </ImageView>
-                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Recipes">
+                                        <Button mnemonicParsing="false" onAction="#openWebsite1" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Recipes">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>
