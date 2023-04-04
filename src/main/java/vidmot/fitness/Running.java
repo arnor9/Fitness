@@ -100,8 +100,14 @@ public class Running implements Initializable {
         }
     }
 
-    public void fxrecipes(ActionEvent actionEvent) {
-        ViewSwitcher.switchTo(View.RECIPES);
+    @FXML
+    private void openWebsite2() {
+        String url = "https://reciperunner.com";
+        try {
+            Desktop.getDesktop().browse(new URI(url));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
     }
 
     public void Feedback(ActionEvent actionEvent) {

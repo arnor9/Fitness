@@ -147,8 +147,14 @@ public class WeightLoss {
         ViewSwitcher.switchTo(View.CALANDER);
     }
 
-    public void fxrecipes(ActionEvent actionEvent) {
-        ViewSwitcher.switchTo(View.RECIPES);
+    @FXML
+    private void openWebsite3() {
+        String url = "https://www.bbcgoodfood.com/recipes/collection/healthy-recipes-for-weight-loss";
+        try {
+            Desktop.getDesktop().browse(new URI(url));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
     }
 
     public void fxcardio(ActionEvent actionEvent) {
