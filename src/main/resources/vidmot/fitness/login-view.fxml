@@ -63,7 +63,7 @@
         </VBox>
     </right>
     <center>
-        <VBox prefWidth="449.0" styleClass="vbox_background_center" BorderPane.alignment="CENTER">
+        <VBox alignment="TOP_RIGHT" prefHeight="890.0" prefWidth="755.0" styleClass="gradient-background" stylesheets="@../../styles.css" BorderPane.alignment="CENTER">
             <children>
                 <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                     <children>
@@ -83,14 +83,14 @@
                                 <Insets left="10.0" />
                             </HBox.margin>
                         </Label>
-                        <HBox alignment="CENTER_RIGHT" prefHeight="99.0" prefWidth="314.0">
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="685.0">
                             <children>
                                 <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="90.0" style="-fx-background-radius: 50; -fx-background-color: transparent; -fx-border-radius: 50;" text="Sign Up">
                                     <font>
                                         <Font name="System Bold" size="16.0" />
                                     </font>
                                 </Button>
-                                <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="90.0" style="-fx-background-radius: 50; -fx-background-color: #FA9C1B;" text="Login" textFill="WHITE">
+                                <Button mnemonicParsing="false" onAction="#fxlogin" prefHeight="37.0" prefWidth="90.0" style="-fx-background-radius: 50; -fx-background-color: #FA9C1B;" text="Login" textFill="WHITE">
                                     <font>
                                         <Font name="System Bold" size="16.0" />
                                     </font>
@@ -105,37 +105,67 @@
                         <Insets />
                     </VBox.margin>
                 </HBox>
-                <VBox prefHeight="247.0" prefWidth="429.0">
-                    <children>
-                        <HBox prefHeight="247.0" prefWidth="416.0">
-                            <children>
-                                <HBox alignment="TOP_CENTER" prefHeight="247.0" prefWidth="437.0">
-                                    <children>
-                                        <Label alignment="TOP_LEFT" prefHeight="35.0" prefWidth="290.0" text="Come train">
-                                            <HBox.margin>
-                                                <Insets top="35.0" />
-                                            </HBox.margin>
-                                            <font>
-                                                <Font name="Krungthep" size="24.0" />
-                                            </font>
-                                        </Label>
-                                        <Label prefHeight="32.0" prefWidth="354.0" text="with FitGo">
-                                            <HBox.margin>
-                                                <Insets right="40.0" top="75.0" />
-                                            </HBox.margin>
-                                            <font>
-                                                <Font name="Krungthep" size="24.0" />
-                                            </font>
-                                        </Label>
-                                    </children>
-                                    <HBox.margin>
-                                        <Insets left="60.0" />
-                                    </HBox.margin>
-                                </HBox>
-                            </children>
-                        </HBox>
-                    </children>
+                <VBox alignment="CENTER_LEFT" prefHeight="155.0" prefWidth="800.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <Label text="Come">
+                     <font>
+                        <Font name="Krungthep" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
                 </VBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="155.0" prefWidth="800.0">
+               <children>
+                  <Label text="Train">
+                     <font>
+                        <Font name="Krungthep" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="235.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="155.0" prefWidth="800.0">
+               <children>
+                  <Label text="With">
+                     <font>
+                        <Font name="Krungthep" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="155.0" prefWidth="800.0">
+               <children>
+                  <Label text="FitGo">
+                     <font>
+                        <Font name="Krungthep" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="70.0" />
+               </VBox.margin>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#fxcontact" style="-fx-background-color: transparent;" text="Contact Us">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
             </children>
         </VBox>
     </center>

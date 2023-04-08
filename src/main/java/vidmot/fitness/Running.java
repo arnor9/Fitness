@@ -73,11 +73,11 @@ public class Running implements Initializable {
     }
 
     public void fxtilbaka(ActionEvent actionEvent) {
-        ViewSwitcher.switchTo(View.MAIN);
+        ViewSwitcher.switchTo(View.LOGIN);
     }
 
     public void fxback3(ActionEvent event) {
-        ViewSwitcher.switchTo(View.LOGIN);
+        ViewSwitcher.switchTo(View.MAIN);
     }
 
     public void fxback(ActionEvent event) {
