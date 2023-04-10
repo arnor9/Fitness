@@ -49,7 +49,7 @@
                     <children>
                         <CheckBox mnemonicParsing="false" text="Remember me">
                             <HBox.margin>
-                                <Insets right="45.0" />
+                                <Insets right="80.0" />
                             </HBox.margin>
                         </CheckBox>
                         <Label text="Forgotten password" textFill="#0f23da">
@@ -63,7 +63,7 @@
         </VBox>
     </right>
     <center>
-        <VBox alignment="TOP_RIGHT" prefHeight="890.0" prefWidth="755.0" styleClass="gradient-background" stylesheets="@../../styles.css" BorderPane.alignment="CENTER">
+        <VBox prefWidth="449.0" styleClass="gradient-background" stylesheets="@../../styles.css" BorderPane.alignment="CENTER">
             <children>
                 <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                     <children>
@@ -105,67 +105,77 @@
                         <Insets />
                     </VBox.margin>
                 </HBox>
-                <VBox alignment="CENTER_LEFT" prefHeight="155.0" prefWidth="800.0">
-               <children>
-                  <HBox prefHeight="100.0" prefWidth="200.0" />
-                  <Label text="Come">
-                     <font>
-                        <Font name="Krungthep" size="18.0" />
-                     </font>
-                     <VBox.margin>
-                        <Insets left="50.0" />
-                     </VBox.margin>
-                  </Label>
-               </children>
+                <VBox prefHeight="247.0" prefWidth="429.0">
+                    <children>
+                        <HBox prefHeight="247.0" prefWidth="416.0">
+                            <children>
+                                <HBox alignment="TOP_CENTER" prefHeight="349.0" prefWidth="448.0">
+                                    <children>
+                                        <Label alignment="TOP_LEFT" prefHeight="35.0" prefWidth="217.0" text="Come">
+                                            <HBox.margin>
+                                                <Insets left="30.0" top="35.0" />
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="Krungthep" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label prefHeight="62.0" prefWidth="267.0" text="train">
+                                            <HBox.margin>
+                                                <Insets left="50.0" right="40.0" top="200.0" />
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="Krungthep" size="24.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets left="60.0" />
+                                    </HBox.margin>
+                                </HBox>
+                            </children>
+                        </HBox>
+                    </children>
                 </VBox>
-            <HBox alignment="CENTER_LEFT" prefHeight="155.0" prefWidth="800.0">
-               <children>
-                  <Label text="Train">
-                     <font>
-                        <Font name="Krungthep" size="18.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="235.0" />
-                     </HBox.margin>
-                  </Label>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="155.0" prefWidth="800.0">
-               <children>
-                  <Label text="With">
-                     <font>
-                        <Font name="Krungthep" size="18.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="100.0" />
-                     </HBox.margin>
-                  </Label>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER_RIGHT" prefHeight="155.0" prefWidth="800.0">
-               <children>
-                  <Label text="FitGo">
-                     <font>
-                        <Font name="Krungthep" size="18.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets right="50.0" />
-                     </HBox.margin>
-                  </Label>
-               </children>
-            </HBox>
-            <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
-               <VBox.margin>
-                  <Insets top="70.0" />
-               </VBox.margin>
-               <children>
-                  <Button mnemonicParsing="false" onAction="#fxcontact" style="-fx-background-color: transparent;" text="Contact Us">
-                     <HBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" />
-                     </HBox.margin>
-                  </Button>
-               </children>
-            </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="349.0" prefWidth="448.0">
+                    <children>
+                        <Label alignment="TOP_LEFT" prefHeight="35.0" prefWidth="290.0">
+                            <HBox.margin>
+                                <Insets top="35.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Krungthep" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="25.0" prefWidth="113.0" text="with">
+                            <HBox.margin>
+                                <Insets right="40.0" top="150.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Krungthep" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="349.0" prefWidth="448.0">
+                    <children>
+                        <Label alignment="TOP_LEFT" prefHeight="35.0" prefWidth="290.0">
+                            <HBox.margin>
+                                <Insets top="35.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Krungthep" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="43.0" prefWidth="72.0" text="fitgo">
+                            <HBox.margin>
+                                <Insets left="300.0" right="40.0" top="75.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Krungthep" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
             </children>
         </VBox>
     </center>
