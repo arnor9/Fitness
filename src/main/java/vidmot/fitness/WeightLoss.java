@@ -134,6 +134,10 @@ public class WeightLoss {
         }
     }
 
+    @FXML
+    void fxrecipes(ActionEvent event) {
+        ViewSwitcher.switchTo(View.RECIPES);
+    }
 
     public void fxbros(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.BROS);
@@ -145,6 +149,26 @@ public class WeightLoss {
 
     public void fxcalendar(ActionEvent actionEvent) {
         ViewSwitcher.switchTo(View.CALANDER);
+    }
+
+    @FXML
+    private void openWebsite() {
+        String url = "https://www.bonappetit.com/recipes/family-meals/slideshow/big-batch-recipes";
+        try {
+            Desktop.getDesktop().browse(new URI(url));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void openWebsite2() {
+        String url = "https://reciperunner.com";
+        try {
+            Desktop.getDesktop().browse(new URI(url));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
