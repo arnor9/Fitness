@@ -63,7 +63,7 @@
         </VBox>
     </right>
     <center>
-        <VBox prefWidth="449.0" styleClass="vbox_background_center" BorderPane.alignment="CENTER">
+        <VBox prefWidth="449.0" styleClass="gradient-background" stylesheets="@../../styles.css" BorderPane.alignment="CENTER">
             <children>
                 <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                     <children>
@@ -109,19 +109,19 @@
                     <children>
                         <HBox prefHeight="247.0" prefWidth="416.0">
                             <children>
-                                <HBox alignment="TOP_CENTER" prefHeight="247.0" prefWidth="437.0">
+                                <HBox alignment="TOP_CENTER" prefHeight="349.0" prefWidth="448.0">
                                     <children>
-                                        <Label alignment="TOP_LEFT" prefHeight="35.0" prefWidth="290.0" text="Come train">
+                                        <Label alignment="TOP_LEFT" prefHeight="35.0" prefWidth="217.0" text="Come">
                                             <HBox.margin>
-                                                <Insets top="35.0" />
+                                                <Insets left="30.0" top="35.0" />
                                             </HBox.margin>
                                             <font>
                                                 <Font name="Krungthep" size="24.0" />
                                             </font>
                                         </Label>
-                                        <Label prefHeight="32.0" prefWidth="354.0" text="with FitGo">
+                                        <Label prefHeight="62.0" prefWidth="267.0" text="train">
                                             <HBox.margin>
-                                                <Insets right="40.0" top="75.0" />
+                                                <Insets left="50.0" right="40.0" top="200.0" />
                                             </HBox.margin>
                                             <font>
                                                 <Font name="Krungthep" size="24.0" />
@@ -136,6 +136,46 @@
                         </HBox>
                     </children>
                 </VBox>
+            <HBox alignment="TOP_CENTER" prefHeight="349.0" prefWidth="448.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefHeight="35.0" prefWidth="290.0">
+                     <HBox.margin>
+                        <Insets top="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Krungthep" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="25.0" prefWidth="113.0" text="with">
+                     <HBox.margin>
+                        <Insets right="40.0" top="150.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Krungthep" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="349.0" prefWidth="448.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefHeight="35.0" prefWidth="290.0">
+                     <HBox.margin>
+                        <Insets top="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Krungthep" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="43.0" prefWidth="72.0" text="fitgo">
+                     <HBox.margin>
+                        <Insets left="300.0" right="40.0" top="75.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Krungthep" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
             </children>
         </VBox>
     </center>
