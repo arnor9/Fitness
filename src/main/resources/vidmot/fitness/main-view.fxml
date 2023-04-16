@@ -158,7 +158,7 @@
                                                 <Image url="@../../myndir/recipes.png" />
                                             </image>
                                         </ImageView>
-                                        <SplitMenuButton mnemonicParsing="false" onAction="#fxrecipes" prefHeight="26.0" prefWidth="95.0" style="gradient-background: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Recipes">
+                                        <SplitMenuButton mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="gradient-background: transparent;" styleClass="shadow" stylesheets="@../../styles.css" text="Recipes">
                                             <font>
                                                 <Font name="Krungthep" size="11.0" />
                                             </font>
