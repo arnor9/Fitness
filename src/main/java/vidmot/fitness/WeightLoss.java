@@ -48,74 +48,94 @@ public class WeightLoss {
 
     @FXML
     void myprogress1(ActionEvent event) {
-        double addedProgress = 0.16666666667;
+        double addedProgress = 0.16666666666;
         if (fxmyprogress1.isSelected()) {
             progress = progress.add(new BigDecimal(String.format("%.2f", addedProgress)));
         } else {
             progress = progress.subtract(new BigDecimal(String.format("%.2f", addedProgress)));
         }
+        if (fxmyprogress1.isSelected() && myprogress2.isSelected() && myprogress3.isSelected() && myprogress4.isSelected() && myprogress5.isSelected() && myprogress6.isSelected()) {
+            progress = new BigDecimal("1.0");
+        }
         myProgressBar.setProgress(progress.doubleValue());
-        myprogresslabel.setText(String.format("%.2f", progress.doubleValue() * 100) + "%");
+        myprogresslabel.setText(String.format("%.2f%%", progress.doubleValue() * 100));
     }
+
 
     @FXML
     void myprogress2(ActionEvent event) {
-        double addedProgress = 0.16666666667;
+        double addedProgress = 0.16666666666;
         if (myprogress2.isSelected()) {
             progress = progress.add(new BigDecimal(String.format("%.2f", addedProgress)));
         } else {
             progress = progress.subtract(new BigDecimal(String.format("%.2f", addedProgress)));
         }
+        if (fxmyprogress1.isSelected() && myprogress2.isSelected() && myprogress3.isSelected() && myprogress4.isSelected() && myprogress5.isSelected() && myprogress6.isSelected()) {
+            progress = new BigDecimal("1.0");
+        }
         myProgressBar.setProgress(progress.doubleValue());
-        myprogresslabel.setText(String.format("%.2f", progress.doubleValue() * 100) + "%");
+        myprogresslabel.setText(String.format("%.2f%%", progress.doubleValue() * 100));
     }
+
 
     @FXML
     void myprogress3(ActionEvent event) {
-        double addedProgress = 0.16666666667;
+        double addedProgress = 0.16666666666;
         if (myprogress3.isSelected()) {
             progress = progress.add(new BigDecimal(String.format("%.2f", addedProgress)));
         } else {
             progress = progress.subtract(new BigDecimal(String.format("%.2f", addedProgress)));
         }
+        if (fxmyprogress1.isSelected() && myprogress2.isSelected() && myprogress3.isSelected() && myprogress4.isSelected() && myprogress5.isSelected() && myprogress6.isSelected()) {
+            progress = new BigDecimal("1.0");
+        }
         myProgressBar.setProgress(progress.doubleValue());
-        myprogresslabel.setText(Double.toString((int) Math.round((progress.doubleValue() * 100))) + "%");
+        myprogresslabel.setText(String.format("%.2f%%", progress.doubleValue() * 100));
     }
 
     @FXML
     void myprogress4(ActionEvent event) {
-        double addedProgress = 0.16666666667;
+        double addedProgress = 0.16666666666;
         if (myprogress4.isSelected()) {
             progress = progress.add(new BigDecimal(String.format("%.2f", addedProgress)));
         } else {
             progress = progress.subtract(new BigDecimal(String.format("%.2f", addedProgress)));
         }
+        if (fxmyprogress1.isSelected() && myprogress2.isSelected() && myprogress3.isSelected() && myprogress4.isSelected() && myprogress5.isSelected() && myprogress6.isSelected()) {
+            progress = new BigDecimal("1.0");
+        }
         myProgressBar.setProgress(progress.doubleValue());
-        myprogresslabel.setText(Double.toString((int) Math.round((progress.doubleValue() * 100))) + "%");
+        myprogresslabel.setText(String.format("%.2f%%", progress.doubleValue() * 100));
     }
 
     @FXML
     void myprogress5(ActionEvent event) {
-        double addedProgress = 0.16666666667;
+        double addedProgress = 0.16666666666;
         if (myprogress5.isSelected()) {
             progress = progress.add(new BigDecimal(String.format("%.2f", addedProgress)));
         } else {
             progress = progress.subtract(new BigDecimal(String.format("%.2f", addedProgress)));
         }
+        if (fxmyprogress1.isSelected() && myprogress2.isSelected() && myprogress3.isSelected() && myprogress4.isSelected() && myprogress5.isSelected() && myprogress6.isSelected()) {
+            progress = new BigDecimal("1.0");
+        }
         myProgressBar.setProgress(progress.doubleValue());
-        myprogresslabel.setText(Double.toString((int) Math.round((progress.doubleValue() * 100))) + "%");
+        myprogresslabel.setText(String.format("%.2f%%", progress.doubleValue() * 100));
     }
 
     @FXML
     void myprogress6(ActionEvent event) {
-        double addedProgress = 0.16666666667;
+        double addedProgress = 0.16666666666;
         if (myprogress6.isSelected()) {
             progress = progress.add(new BigDecimal(String.format("%.2f", addedProgress)));
         } else {
             progress = progress.subtract(new BigDecimal(String.format("%.2f", addedProgress)));
         }
+        if (fxmyprogress1.isSelected() && myprogress2.isSelected() && myprogress3.isSelected() && myprogress4.isSelected() && myprogress5.isSelected() && myprogress6.isSelected()) {
+            progress = new BigDecimal("1.0");
+        }
         myProgressBar.setProgress(progress.doubleValue());
-        myprogresslabel.setText(Double.toString((int) Math.round((progress.doubleValue() * 100))) + "%");
+        myprogresslabel.setText(String.format("%.2f%%", progress.doubleValue() * 100));
     }
 
     public void initialize() {
