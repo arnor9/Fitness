@@ -241,4 +241,16 @@ public class MainPage implements Initializable {
             e.printStackTrace();
         }
     }
+
+    //HVAÐ ER BMI ?
+
+    @FXML
+    private void handleButtonAction(ActionEvent event) {
+        String url = "https://jerseystrong.com/blog/fitness-for-dummies-what-is-bmi-and-other-frequently-asked-questions/#:~:text=Answer%3A%20BMI%20stands%20for%20Body,they%20set%20goals%20with%20you.";
+        try {
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
